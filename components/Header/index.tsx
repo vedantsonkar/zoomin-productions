@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <div className="border-b border-white w-full sticky top-0 h-28 flex items-center justify-between px-24 bg-black">
+    <div className="border-b border-white w-full sticky top-0 h-28 flex items-center justify-between px-24 bg-stone-900">
       <Link href="/" className="relative w-36 h-36">
         <Image
           src={Logo}
