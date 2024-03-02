@@ -1,3 +1,4 @@
+"use client";
 import Logo from "@/public/images/global/zoomin_logo.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
           aria-label="Logo"
         />
       </Link>
-      <ul className="flex space-x-6 items-center justify-center max-md:hidden text-xl md:text-3xl font-bold">
+      <ul className="flex space-x-6 items-center justify-center max-lg:hidden text-xl md:text-3xl font-bold">
         <li>
           <Link
             href="/"
@@ -64,6 +65,11 @@ const Header: React.FC = () => {
           </Link>
         </li>
       </ul>
+      <button className="block hamburger lg:hidden focus:outline-none">
+        <span className="hamburger-top" />
+        <span className="hamburger-middle" />
+        <span className="hamburger-bottom" />
+      </button>
     </div>
   );
 };
