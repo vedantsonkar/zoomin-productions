@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const AnimatedTextSection1: React.FC = () => {
+const AboutUsSection: React.FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -47,8 +47,8 @@ const AnimatedTextSection1: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="bg-gradient-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-center text-2xl font-bold text-transparent md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]"
       >
-        Welcome To ZoomIn Productions
-        <span className="text-black"> - Production House In India</span>
+        About ZoomIn Productions
+        <span className="text-black"> - Best Ad Film Production House In Mumbai & Delhi</span>
       </motion.h2>
 
       <motion.p
@@ -58,12 +58,10 @@ const AnimatedTextSection1: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-xl font-semibold text-[#000]"
       >
-        ZoomIn is a full-service film production company, a phenomenal
-        multi-functioning, short film production house and an ad film production
-        house that professionally excel in ad filmmaking, corporate films, short
-        films, product shoot, 360-degree videos, VFX, editing, and audio mixing;
-        an integrated production house based in Mumbai and a leader in all forms
-        of content creation and entertainment.
+        At Griffin Pictures, our aim is to bring an idea to reality with a touch of imagination. 
+        As a video production company in Mumbai, we create content on various verticals, 
+        whilst housing the most eminent brands in the country. 
+        Our belief is to bring value and distinction with conviction.
       </motion.p>
       <motion.p
         variants={variantsLeft}
@@ -72,11 +70,11 @@ const AnimatedTextSection1: React.FC = () => {
         transition={{ duration: 0.5, delay: 1.0 }}
         className="text-xl font-semibold text-[#000]"
       >
-        We combine the right aesthetics with impactful and compelling narratives
-        to bring out a creative story. Engaging content is our forte; we house
-        storytellers, corporate film, and video makers who are the kingpins of
-        producing and narrating extraordinary stories. We strive to bring out
-        tales that are gripping, ingenious, and empathetic.
+        In the era of modern moviemaking, we direct ourselves on the path of redefining benchmarks. 
+        Just like the dawning of a mythical creature, our journey began as a group of highly enthusiastic youngsters,
+         having a collective experience of more than 20 years.
+         We always believe in delivering a creative solution that is best suited for a brand. 
+         We thrive on being able to deliver the best there is to offer, combining all our expertise and passion into the end product..
       </motion.p>
       <motion.p
         variants={variantsRight}
@@ -85,11 +83,13 @@ const AnimatedTextSection1: React.FC = () => {
         transition={{ duration: 0.5, delay: 1.3 }}
         className="text-xl font-semibold text-[#000]"
       >
-        We make the A-Z of content with our bunch of creative geniuses
-        determined to bring out the best in all parts of the production process.
-        Whether it is a short film production, commercial TVC ad, music video,
-        documentary, corporate video, online promo, viral video or YouTube video
-        production, we do it all.
+        We craft handmade stories, captured through our professional lens with a deep understanding of 
+        our product and all the perseverance that goes into making stories that click- literally! 
+        You can count on us to create a thumb-stopping film or video that could take us to great heights of success, together. 
+        Rest assured, we value every brand that gives us the golden opportunity to be their video creators or filmmakers
+         across all platforms- be it social media, websites, and other digital platforms. Explore our film production house- 
+        A world of gripping stories that are woven creatively for the audience.
+         Come take a plunge into the world of light and magic!
       </motion.p>
       <motion.p
         variants={variantsLeft}
@@ -98,11 +98,10 @@ const AnimatedTextSection1: React.FC = () => {
         transition={{ duration: 0.5, delay: 1.6 }}
         className="text-xl font-semibold text-[#000]"
       >
-        Being the pioneers of the filmmaking industry, we bring together a full
-        house of engaging, memorable and effective chronicles that speak for
-        brands. This makes us the go-to production house for many popular brands
-        across India. We believe our work speaks for itself. Browse our projects
-        for videos and short films created by ZoomIn Productions.
+        Griffin Pictures also doubles as a TVC production house that is always updated with new technology and innovative ideas.
+         With a plethora of cutting-edge services we offer such as ad filmmaking, corporate videos, short films, product shoot, 
+         360-degree videos, VFX, editing, 
+        and audio mixing, we provide you with a wholesome experience of everything under the BIG umbrella of production.
       </motion.p>
       <motion.p
         variants={variantsBottom}
@@ -111,24 +110,10 @@ const AnimatedTextSection1: React.FC = () => {
         transition={{ duration: 0.5, delay: 1.9 }}
         className="flex flex-col items-start justify-center gap-y-10 text-left text-xl font-semibold text-[#000]"
       >
-        <span>
-          <a
-            href="/contact-us"
-            className="inline-block text-[#A0383F] underline"
-          >
-            Contact us
-          </a>{" "}
-          if you are looking for video and image production services in India.
-        </span>
-        <button
-          // href="/about-us"
-          className="self-center rounded-full border border-[#000] from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% px-8 py-4 hover:border-white hover:bg-gradient-to-br hover:text-white"
-        >
-          Learn More
-        </button>
+        Get in touch with us if you are looking for video production services with our Ad production house
       </motion.p>
     </div>
   );
 };
 
-export default AnimatedTextSection1;
+export default AboutUsSection;

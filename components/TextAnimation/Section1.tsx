@@ -56,7 +56,7 @@ const AnimatedTextSection1: React.FC = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="text-2xl font-bold text-black md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]"
+          className="text-2xl font-bold text-black md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.5rem]"
         >
           A fully integrated production company and a leader in all forms of
           content creation, entertainment and related businesses

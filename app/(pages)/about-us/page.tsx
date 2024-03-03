@@ -1,6 +1,7 @@
+import AboutUsSection from "@/components/About Us/AboutUsSection";
 import { NextPage } from "next";
 
 const AboutUsPage: NextPage = () => {
-  return <div>About Us 1</div>;
+  return <div><AboutUsSection/></div>;
 };
 export default AboutUsPage;

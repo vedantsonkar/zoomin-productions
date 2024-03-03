@@ -11,16 +11,27 @@ type ArrowPropTypes = {
   direction?: "right" | "left";
 };
 
-const Arrow: FC<ArrowPropTypes> = ({ direction = "left" }) => {
-  const arrowClassName =
-    direction === "left"
-      ? "relative h-6 w-6 border-2 border-black rounded-full p-4"
-      : "relative h-6 w-6 border-2 rotate-180 border-black rounded-full p-4";
+const PrevArrow: FC = ( props ) => {
+  const arrowClassName = "relative h-6 w-6 border-2 border-black rounded-full p-4"
   return (
-    <div className={arrowClassName}>
+    <div className={arrowClassName} {...props}>
       <Image
         src="/images/vectors/Arrow.svg"
         className="object-contain"
+        fill
+        alt="Arrow"
+      />
+    </div>
+  );
+};
+
+const NextArrow: FC = ( props ) => {
+  const arrowClassName = "relative h-6 w-6 border-2 border-black rounded-full p-4"
+  return (
+    <div className={arrowClassName} {...props}>
+      <Image
+        src="/images/vectors/Arrow.svg"
+        className="object-contain rotate-180"
         fill
         alt="Arrow"
       />
@@ -33,8 +44,8 @@ const Carousel: FC<SliderPropTypes> = ({ children, settings }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    nextArrow: <Arrow direction="right" />,
-    prevArrow: <Arrow />,
+    nextArrow: settings?.arrows ? <NextArrow/> : <></>,
+    prevArrow: settings?.arrows ? <PrevArrow /> : <></>,
     slidesToShow: 3,
     slidesToScroll: 1,
     ...settings,

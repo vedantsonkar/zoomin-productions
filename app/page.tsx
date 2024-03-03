@@ -1,3 +1,4 @@
+import FeaturedFilms from "@/components/FeaturedSection";
 import OurClientsSection from "@/components/OurClients";
 import AnimatedTextSection1 from "@/components/TextAnimation/Section1";
 import AnimatedTextSection2 from "@/components/TextAnimation/Section2";
@@ -15,9 +16,10 @@ export default function Home() {
         <AnimatedTextSection1 />
       </div>
       <OurClientsSection />
-      <div className="my-10 md:my-36">
+      <div className="my-10">
         <AnimatedTextSection2 />
       </div>
+    <FeaturedFilms />
     </main>
   );
 }
