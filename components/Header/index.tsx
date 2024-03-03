@@ -2,75 +2,82 @@
 import Logo from "@/public/images/global/zoomin_logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import Menu from "../Menu";
 
 const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const handleMenuClick = () => {
+    const hamburgerButton = document.querySelector(".hamburger");
+    if (hamburgerButton) {
+      hamburgerButton.classList.toggle("open");
+    }
+    setMenuOpen((prev) => !prev);
+  };
+
   return (
-    <div className="border-b border-white w-full sticky top-0 h-28 flex items-center justify-between px-24 bg-stone-900">
-      <Link href="/" className="relative w-36 h-36">
-        <Image
-          src={Logo}
-          alt="ZoomIn Productions"
-          title="ZoomIn Productions"
-          className="object-contain"
-          fill
-          sizes="33vw"
-          priority
-          aria-label="Logo"
-        />
-      </Link>
-      <ul className="flex space-x-6 items-center justify-center max-lg:hidden text-xl md:text-3xl font-bold">
-        <li>
+    <>
+      <div className="sticky top-0 z-50 flex h-16 w-full items-center justify-between border-b border-white bg-[#fff] px-12 shadow-lg md:h-20 lg:px-24">
+        <Link href="/" className="relative h-20 w-20 lg:h-24 lg:w-24">
+          <Image
+            src={Logo}
+            alt="ZoomIn Productions"
+            title="ZoomIn Productions"
+            className="object-contain"
+            fill
+            sizes="33vw"
+            priority
+            aria-label="Logo"
+          />
+        </Link>
+        <nav className="flex items-center justify-center gap-x-6 text-xl font-bold max-lg:hidden xl:text-3xl">
           <Link
             href="/"
-            className="text-transparent transition-colors bg-gradient-to-r bg-white hover:from-indigo-500 hover:from-10% hover:via-sky-500 hover:via-30% hover:to-emerald-500 hover:to-90% bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Home"
           >
             Home
           </Link>
-        </li>
-        <li>
           <Link
             href="/about-us"
-            className="text-transparent transition-colors bg-gradient-to-r bg-white hover:from-indigo-500 hover:from-10% hover:via-sky-500 hover:via-30% hover:to-emerald-500 hover:to-90% bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="About Us"
           >
             About Us
           </Link>
-        </li>
-        <li>
           <Link
             href="/our-team"
-            className="text-transparent transition-colors bg-gradient-to-r bg-white hover:from-indigo-500 hover:from-10% hover:via-sky-500 hover:via-30% hover:to-emerald-500 hover:to-90% bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Our Projects"
           >
             Our Team
           </Link>
-        </li>
-        <li>
           <Link
             href="/our-projects"
-            className="text-transparent transition-colors bg-gradient-to-r bg-white hover:from-indigo-500 hover:from-10% hover:via-sky-500 hover:via-30% hover:to-emerald-500 hover:to-90% bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Our Projects"
           >
             Our Projects
           </Link>
-        </li>
-        <li>
           <Link
             href="/contact-us"
-            className="text-transparent transition-colors bg-gradient-to-r bg-white hover:from-indigo-500 hover:from-10% hover:via-sky-500 hover:via-30% hover:to-emerald-500 hover:to-90% bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Contact Us"
           >
             Contact Us
           </Link>
-        </li>
-      </ul>
-      <button className="block hamburger lg:hidden focus:outline-none">
-        <span className="hamburger-top" />
-        <span className="hamburger-middle" />
-        <span className="hamburger-bottom" />
-      </button>
-    </div>
+        </nav>
+        <button
+          className="hamburger block focus:outline-none lg:hidden"
+          onClick={() => handleMenuClick()}
+        >
+          <span className="hamburger-top" />
+          <span className="hamburger-middle" />
+          <span className="hamburger-bottom" />
+        </button>
+      </div>
+      {menuOpen && <Menu />}
+    </>
   );
 };
 

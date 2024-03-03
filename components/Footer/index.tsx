@@ -3,12 +3,9 @@ import Link from "next/link";
 export default function Footer() {
   const socialLogoClass = "relative md:h-8 md:w-8 h-6 w-6";
   return (
-    <footer
-      className="bg-stone-900 relative pt-14 pb-16 px-8 flex w-full justify-center gap-x-72 items-center md:items-start 
-    md:flex-row flex-col-reverse gap-y-10"
-    >
+    <footer className="lg:pt-18 relative flex w-full flex-col-reverse items-center justify-center gap-x-32 gap-y-10 bg-[#EDEAE9] px-8 pb-16 pt-14 md:flex-row md:items-start lg:gap-x-72 lg:pb-24">
       {/* LOGO and Socia Links */}
-      <div className="flex items-center flex-col justify-center gap-x-4">
+      <div className="flex flex-col items-center justify-center gap-x-4">
         <div className="relative h-36 w-36 md:-mt-6">
           <Image
             src="/images/global/zoomin_logo.png"
@@ -66,34 +63,20 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex gap-x-20 text-md md:text-xl ">
-        <div className="flex flex-col gap-y-3 text-white">
-          <a href="#" className="hover:text-brightRed">
-            Home
-          </a>
-          <a href="#" className="hover:text-brightRed">
-            Pricing
-          </a>
-          <a href="#" className="hover:text-brightRed">
-            Products
-          </a>
-          <a href="#" className="hover:text-brightRed">
-            About
-          </a>
+      <div className="flex gap-x-20 text-lg font-semibold text-black md:text-xl xl:gap-x-96 xl:text-2xl">
+        <div className="flex flex-col gap-y-3 ">
+          <Link href="/">Home</Link>
+          <Link href="/pricing">Pricing</Link>
+          <Link href="/products">Products</Link>
+          <Link href="/about-us">About Us</Link>
         </div>
-        <div className="flex flex-col space-y-3 text-white">
-          <a href="#" className="hover:text-brightRed">
-            Careers
-          </a>
-          <a href="#" className="hover:text-brightRed">
-            Community
-          </a>
-          <a href="#" className="hover:text-brightRed">
-            Privacy Policy
-          </a>
+        <div className="flex flex-col space-y-3 ">
+          <Link href="/careers">Careers</Link>
+          <Link href="/community">Community</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
         </div>
       </div>
-      <div className="max-md:hidden py-4 text-sm absolute bottom-0 text-white">
+      <div className="absolute bottom-0 py-4 text-sm text-black max-md:hidden">
         Copyright &copy; 2024, All Rights Reserved
       </div>
     </footer>

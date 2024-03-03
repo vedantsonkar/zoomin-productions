@@ -1,52 +1,22 @@
-import VideoCard from "@/components/VideoCard";
+import OurClientsSection from "@/components/OurClients";
+import AnimatedTextSection1 from "@/components/TextAnimation/Section1";
+import AnimatedTextSection2 from "@/components/TextAnimation/Section2";
+import VideoPlayer from "@/components/VideoPlayer";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <iframe
-        className="w-full h-[50rem]"
-        src="https://www.youtube.com/embed/MlnNZV7Jujs?si=ObU7QopUgz8w3ISi"
-        title="YouTube Video Player"
-        aria-label="Youtube Video Player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
-      <div className="flex items-center hide-scroll w-full justify-center gap-x-10 bg-stone-900 py-10 overflow-x-auto">
-        <VideoCard
-          name="Anuj Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Vineeth Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Vineeth Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Vineeth Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Vineeth Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Anuj Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Anuj Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Anuj Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
-        <VideoCard
-          name="Anuj Myageri"
-          imageSrc="/images/global/zoomin_logo.png"
-        />
+    <main className="flex flex-col items-start justify-start bg-[#fff]">
+      <VideoPlayer
+        videoPath="/videos/Landing_Video.mp4"
+        classNames={{ root: "object-fill" }}
+        restVideoTags={{ autoPlay: true, preload: "auto", muted: true }}
+      />
+      <div className="my-10 md:my-36">
+        <AnimatedTextSection1 />
+      </div>
+      <OurClientsSection />
+      <div className="my-10 md:my-36">
+        <AnimatedTextSection2 />
       </div>
     </main>
   );

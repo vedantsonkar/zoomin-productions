@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "ecmel.vscode-html-css",
+    "eamodio.gitlens"
+  ]
+}

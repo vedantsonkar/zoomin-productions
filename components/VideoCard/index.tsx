@@ -9,7 +9,7 @@ type VideoCardProps = {
 
 const VideoCard: FC<VideoCardProps> = ({ name, imageSrc }) => {
   return (
-    <div className="group aspect-square relative w-48 h-48 rounded-md bg-white flex justify-center items-center px-8 mx-auto">
+    <div className="group relative flex aspect-square h-48 w-48 items-center justify-center rounded-md bg-white">
       <Image
         src={imageSrc}
         alt="ZoomIn Productions"
@@ -20,14 +20,14 @@ const VideoCard: FC<VideoCardProps> = ({ name, imageSrc }) => {
         priority
         aria-label="Logo"
       />
-      <div className="absolute w-full bottom-0 left-1/2 -translate-x-1/2">
-        <p className="bg-black bg-opacity-60 text-center rounded-b-md py-2 text-black">
+      <div className="absolute bottom-0 left-1/2 w-full -translate-x-1/2">
+        <p className="rounded-b-md bg-black bg-opacity-60 py-2 text-center text-black">
           {name}
         </p>
       </div>
-      <div className="bg-black absolute w-full h-full bg-opacity-30 z-10 invisible group-hover:visible" />
+      <div className="invisible absolute z-10 h-full w-full bg-black bg-opacity-30 group-hover:visible" />
 
-      <div className="relative group-hover:visible invisible h-20 w-20">
+      <div className="invisible relative h-20 w-20 group-hover:visible">
         <Image
           src="/images/vectors/Play_Icon.svg"
           alt="ZoomIn Productions"
