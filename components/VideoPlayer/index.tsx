@@ -22,7 +22,7 @@ const VideoPlayer: FC<VideoPlayerProps> = ({
 }) => {
   return (
     <video
-      className={twMerge("w-full h-full", classNames?.root)}
+      className={twMerge("h-full w-full", classNames?.root)}
       controls
       preload="auto"
       autoPlay={true}

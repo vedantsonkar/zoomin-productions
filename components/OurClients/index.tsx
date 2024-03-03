@@ -38,8 +38,8 @@ const OurClientsSection: FC = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="w-full py-10 flex flex-col gap-y-24" ref={ref}>
-      <h3 className="text-[1.8rem] lg:text-[2.4rem] xl:text-[3rem] font-bold text-center">
+    <div className="flex w-full flex-col gap-y-24 py-10" ref={ref}>
+      <h3 className="text-center text-[1.8rem] font-bold lg:text-[2.4rem] xl:text-[3rem]">
         People Who Trust Us
       </h3>
       <motion.div
@@ -47,7 +47,7 @@ const OurClientsSection: FC = () => {
         initial="hidden"
         animate={controls}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="grid px-10 md:px-24 md:grid-cols-4 grid-cols-2 gap-14 place-items-center"
+        className="grid grid-cols-2 place-items-center gap-14 px-10 md:grid-cols-4 md:px-24"
       >
         <Image src={G2} alt="G2" width={200} height={200} sizes="70vw" />
         <Image

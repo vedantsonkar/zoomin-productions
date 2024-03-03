@@ -4,7 +4,7 @@ const Menu = () => {
   const linkClass =
     "text-transparent transition-colors focus:bg-gradient-to-r bg-white bg-clip-text from-[#ff9595] via-[#81da6f] to-[#49dfd2]";
   return (
-    <nav className="flex fixed top-16 md:10p-20 flex-col bg-[#EDEAE9] items-center gap-y-10 lg:hidden text-xl font-bold w-full py-10 z-10 overflow-y-auto">
+    <nav className="md:10p-20 fixed top-16 z-10 flex w-full flex-col items-center gap-y-10 overflow-y-auto bg-[#EDEAE9] py-10 text-xl font-bold lg:hidden">
       <Link href="/" className={linkClass} aria-label="Home">
         Home
       </Link>

@@ -17,8 +17,8 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <div className="border-b border-white shadow-lg w-full sticky top-0 h-16 md:h-20 flex items-center justify-between px-12 lg:px-24 bg-[#fff] z-50">
-        <Link href="/" className="relative lg:w-24 lg:h-24 h-20 w-20">
+      <div className="sticky top-0 z-50 flex h-16 w-full items-center justify-between border-b border-white bg-[#fff] px-12 shadow-lg md:h-20 lg:px-24">
+        <Link href="/" className="relative h-20 w-20 lg:h-24 lg:w-24">
           <Image
             src={Logo}
             alt="ZoomIn Productions"
@@ -30,45 +30,45 @@ const Header: React.FC = () => {
             aria-label="Logo"
           />
         </Link>
-        <nav className="flex gap-x-6 items-center justify-center max-lg:hidden text-xl xl:text-3xl font-bold">
+        <nav className="flex items-center justify-center gap-x-6 text-xl font-bold max-lg:hidden xl:text-3xl">
           <Link
             href="/"
-            className="text-transparent transition-colors hover:bg-gradient-to-tr bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Home"
           >
             Home
           </Link>
           <Link
             href="/about-us"
-            className="text-transparent transition-colors hover:bg-gradient-to-tr bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="About Us"
           >
             About Us
           </Link>
           <Link
             href="/our-team"
-            className="text-transparent transition-colors hover:bg-gradient-to-tr bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Our Projects"
           >
             Our Team
           </Link>
           <Link
             href="/our-projects"
-            className="text-transparent transition-colors hover:bg-gradient-to-tr bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Our Projects"
           >
             Our Projects
           </Link>
           <Link
             href="/contact-us"
-            className="text-transparent transition-colors hover:bg-gradient-to-tr bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text"
+            className="bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr"
             aria-label="Contact Us"
           >
             Contact Us
           </Link>
         </nav>
         <button
-          className="block hamburger lg:hidden focus:outline-none"
+          className="hamburger block focus:outline-none lg:hidden"
           onClick={() => handleMenuClick()}
         >
           <span className="hamburger-top" />
