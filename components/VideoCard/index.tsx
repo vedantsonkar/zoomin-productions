@@ -9,7 +9,7 @@ type VideoCardProps = {
 
 const VideoCard: FC<VideoCardProps> = ({ name, imageSrc }) => {
   return (
-    <div className="group aspect-square relative w-48 h-48 rounded-md bg-white flex justify-center items-center">
+    <div className="group aspect-square relative w-48 h-48 rounded-md bg-white flex justify-center items-center px-8 mx-auto">
       <Image
         src={imageSrc}
         alt="ZoomIn Productions"
