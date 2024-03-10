@@ -1,6 +1,6 @@
-import AboutUsSection from '@/components/About Us/AboutUsSection'
-import PortfolioSection from '@/components/About Us/PortfolioCarouselSection'
-import { NextPage } from 'next'
+import AboutUsSection from '@/components/About Us/AboutUsSection';
+import PortfolioSection from '@/components/About Us/PortfolioCarouselSection';
+import { NextPage } from 'next';
 
 const AboutUsPage: NextPage = () => {
   return (
@@ -8,6 +8,6 @@ const AboutUsPage: NextPage = () => {
       <AboutUsSection />
       <PortfolioSection />
     </div>
-  )
-}
-export default AboutUsPage
+  );
+};
+export default AboutUsPage;

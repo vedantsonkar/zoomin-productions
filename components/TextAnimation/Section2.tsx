@@ -1,39 +1,37 @@
-'use client'
-import { useInView } from 'react-intersection-observer'
-import { motion, useAnimation, Variants } from 'framer-motion'
-import { useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+'use client';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation, Variants } from 'framer-motion';
+import { useEffect } from 'react';
 
 const AnimatedTextSection1: React.FC = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({ triggerOnce: true })
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   // Define animation variants
   const variantsRight: Variants = {
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: 100 },
-  }
+  };
   const variantsLeft: Variants = {
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: -100 },
-  }
+  };
   const variantsBottom: Variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 100 },
-  }
+  };
   const variantsTop: Variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: -100 },
-  }
+  };
   // Animate when the element is in view
   useEffect(() => {
     if (inView) {
-      controls.start('visible')
+      controls.start('visible');
     } else {
-      controls.start('hidden')
+      controls.start('hidden');
     }
-  }, [controls, inView])
+  }, [controls, inView]);
 
   return (
     <div
@@ -128,7 +126,7 @@ const AnimatedTextSection1: React.FC = () => {
         </button>
       </motion.p>
     </div>
-  )
-}
+  );
+};
 
-export default AnimatedTextSection1
+export default AnimatedTextSection1;

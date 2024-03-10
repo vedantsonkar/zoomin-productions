@@ -1,5 +1,5 @@
-import { DetailedHTMLProps, FC, VideoHTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
+import { DetailedHTMLProps, FC, VideoHTMLAttributes } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 type VideoPlayerProps = {
   videoPath: string;
@@ -17,14 +17,14 @@ type VideoPlayerProps = {
 const VideoPlayer: FC<VideoPlayerProps> = ({
   videoPath,
   classNames,
-  type = "video/mp4",
+  type = 'video/mp4',
   restVideoTags,
 }) => {
   return (
     <video
-      className={twMerge("h-full w-full", classNames?.root)}
+      className={twMerge('h-full w-full', classNames?.root)}
       controls
-      preload="auto"
+      preload='auto'
       autoPlay={true}
       {...restVideoTags}
     >

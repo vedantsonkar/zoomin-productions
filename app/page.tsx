@@ -1,8 +1,8 @@
-import FeaturedFilms from '@/components/FeaturedSection'
-import OurClientsSection from '@/components/OurClients'
-import AnimatedTextSection1 from '@/components/TextAnimation/Section1'
-import AnimatedTextSection2 from '@/components/TextAnimation/Section2'
-import VideoPlayer from '@/components/VideoPlayer'
+import FeaturedFilms from '@/components/FeaturedSection';
+import OurClientsSection from '@/components/OurClients';
+import AnimatedTextSection1 from '@/components/TextAnimation/Section1';
+import AnimatedTextSection2 from '@/components/TextAnimation/Section2';
+import VideoPlayer from '@/components/VideoPlayer';
 
 export default function Home() {
   return (
@@ -21,5 +21,5 @@ export default function Home() {
       </div>
       <FeaturedFilms />
     </main>
-  )
+  );
 }

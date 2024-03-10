@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { FC } from 'react'
+import Link from 'next/link';
+import Image from 'next/image';
+import { FC } from 'react';
 
 type VideoCardProps = {
-  name: string
-  imageSrc: string
-}
+  name: string;
+  imageSrc: string;
+};
 
 const VideoCard: FC<VideoCardProps> = ({ name, imageSrc }) => {
   return (
@@ -40,7 +40,7 @@ const VideoCard: FC<VideoCardProps> = ({ name, imageSrc }) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VideoCard
+export default VideoCard;
