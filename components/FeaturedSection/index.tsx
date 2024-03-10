@@ -1,9 +1,9 @@
-'use client'
-import { FC, useEffect } from 'react'
-import Carousel from '../Carousel'
-import VideoCard from '../VideoCard'
-import { motion, useAnimation, Variants } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+'use client';
+import { FC, useEffect } from 'react';
+import Carousel from '../Carousel';
+import VideoCard from '../VideoCard';
+import { motion, useAnimation, Variants } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const nameAndImages = [
   { name: 'G2 Shoot', imageSrc: '/images/global/zoomin_logo.png' },
@@ -14,7 +14,7 @@ const nameAndImages = [
   { name: 'G2 Shoot', imageSrc: '/images/global/zoomin_logo.png' },
   { name: 'G2 Shoot', imageSrc: '/images/global/zoomin_logo.png' },
   { name: 'G2 Shoot', imageSrc: '/images/global/zoomin_logo.png' },
-]
+];
 
 const servicesImages = [
   '/images/service/rec_service.png',
@@ -22,26 +22,26 @@ const servicesImages = [
   '/images/service/rec_service.png',
   '/images/service/rec_service.png',
   '/images/service/rec_service.png',
-]
+];
 
 const FeaturedFilms: FC = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({ triggerOnce: true })
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   // Define animation variants
   const variantsBottom: Variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: -100 },
-  }
+  };
 
   // Animate when the element is in view
   useEffect(() => {
     if (inView) {
-      controls.start('visible')
+      controls.start('visible');
     } else {
-      controls.start('hidden')
+      controls.start('hidden');
     }
-  }, [controls, inView])
+  }, [controls, inView]);
 
   return (
     <div ref={ref} className='my-10 w-full px-24'>
@@ -51,7 +51,7 @@ const FeaturedFilms: FC = () => {
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <h3 className='mb-8 text-center text-2xl font-semibold'>
+        <h3 className='mb-8 text-center text-2xl font-semibold md:text-3xl'>
           Our Featured Films
         </h3>
         <div className='block w-full'>
@@ -65,7 +65,7 @@ const FeaturedFilms: FC = () => {
         </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default FeaturedFilms
+export default FeaturedFilms;
