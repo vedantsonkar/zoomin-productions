@@ -1,19 +1,19 @@
-'use client'
-import Logo from '@/public/images/global/zoomin_logo.png'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
-import Menu from '../Menu'
+'use client';
+import Logo from '@/public/images/global/zoomin_logo.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import Menu from '../Menu';
 
 const Header: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false)
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const handleMenuClick = () => {
-    const hamburgerButton = document.querySelector('.hamburger')
+    const hamburgerButton = document.querySelector('.hamburger');
     if (hamburgerButton) {
-      hamburgerButton.classList.toggle('open')
+      hamburgerButton.classList.toggle('open');
     }
-    setMenuOpen((prev) => !prev)
-  }
+    setMenuOpen((prev) => !prev);
+  };
 
   return (
     <>
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
       </div>
       {menuOpen && <Menu />}
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

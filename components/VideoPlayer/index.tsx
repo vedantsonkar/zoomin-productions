@@ -1,18 +1,18 @@
-import { DetailedHTMLProps, FC, VideoHTMLAttributes } from 'react'
-import { twMerge } from 'tailwind-merge'
+import { DetailedHTMLProps, FC, VideoHTMLAttributes } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 type VideoPlayerProps = {
-  videoPath: string
+  videoPath: string;
   classNames?: {
-    root?: string
-    source?: string
-  }
-  type?: string
+    root?: string;
+    source?: string;
+  };
+  type?: string;
   restVideoTags?: DetailedHTMLProps<
     VideoHTMLAttributes<HTMLVideoElement>,
     HTMLVideoElement
-  >
-}
+  >;
+};
 
 const VideoPlayer: FC<VideoPlayerProps> = ({
   videoPath,
@@ -31,7 +31,7 @@ const VideoPlayer: FC<VideoPlayerProps> = ({
       <source className={classNames?.source} src={videoPath} type={type} />
       Your browser does not support the video tag.
     </video>
-  )
-}
+  );
+};
 
-export default VideoPlayer
+export default VideoPlayer;

@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 export default function Footer() {
-  const socialLogoClass = 'relative md:h-8 md:w-8 h-6 w-6'
+  const socialLogoClass = 'relative md:h-8 md:w-8 h-6 w-6';
   return (
     <footer className='lg:pt-18 relative flex w-full flex-col-reverse items-center justify-center gap-x-32 gap-y-10 bg-[#EDEAE9] px-8 pb-16 pt-14 md:flex-row md:items-start lg:gap-x-72 lg:pb-24'>
       {/* LOGO and Socia Links */}
@@ -80,5 +80,5 @@ export default function Footer() {
         Copyright &copy; 2024, All Rights Reserved
       </div>
     </footer>
-  )
+  );
 }

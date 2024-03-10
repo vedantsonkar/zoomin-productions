@@ -1,23 +1,23 @@
-'use client'
-import { Variants, useAnimation, motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { FC, useEffect } from 'react'
+'use client';
+import { Variants, useAnimation, motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { FC, useEffect } from 'react';
 
 const PortfolioSection: FC = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({ triggerOnce: true })
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
   const variantsTopLeft: Variants = {
     visible: { opacity: 1, x: 0, y: 0 },
     hidden: { opacity: 0, x: -100, y: -100 },
-  }
+  };
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible')
+      controls.start('visible');
     } else {
-      controls.start('hidden')
+      controls.start('hidden');
     }
-  }, [controls, inView])
+  }, [controls, inView]);
 
   return (
     <div ref={ref} className='my-10 w-full px-24'>
@@ -30,6 +30,6 @@ const PortfolioSection: FC = () => {
         test
       </motion.div>
     </div>
-  )
-}
-export default PortfolioSection
+  );
+};
+export default PortfolioSection;
