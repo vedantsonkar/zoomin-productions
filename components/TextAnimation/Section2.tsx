@@ -2,8 +2,6 @@
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation, Variants } from 'framer-motion'
 import { useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 
 const AnimatedTextSection1: React.FC = () => {
   const controls = useAnimation()
