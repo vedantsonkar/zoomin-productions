@@ -1,4 +1,5 @@
-import { Variants, useAnimation, motion} from "framer-motion";
+'use client';
+import { Variants, useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FC, useEffect } from "react";
 
