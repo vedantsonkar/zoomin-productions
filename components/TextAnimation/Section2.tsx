@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation, Variants } from 'framer-motion';
 import { useEffect } from 'react';
 
-const AnimatedTextSection1: React.FC = () => {
+const AnimatedTextSection2: React.FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -129,4 +129,4 @@ const AnimatedTextSection1: React.FC = () => {
   );
 };
 
-export default AnimatedTextSection1;
+export default AnimatedTextSection2;

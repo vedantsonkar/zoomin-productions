@@ -10,10 +10,6 @@ const nameAndImages = [
   { name: 'Mithila', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
   { name: 'Swaraj', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
   { name: 'Dhaval', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
 ];
 
 const PortfolioSection: FC = () => {
@@ -42,11 +38,16 @@ const PortfolioSection: FC = () => {
         variants={variantsTopLeft}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <h3 className='mb-8 text-center text-2xl font-semibold md:text-3xl'>
-          Our Team
-        </h3>
+        <h3 className='section-heading'>Our Team</h3>
+        <p className='mb-12 px-[-3rem] text-center font-semibold md:px-56'>
+          Our dynamic team is a collective force of creativity and expertise,
+          specializing in the realms of video production and content generation.
+          Comprising seasoned professionals with a passion for visual
+          storytelling, our team members bring a wealth of experience and
+          innovation to every project.
+        </p>
         <div className='block w-full'>
-          <Carousel settings={{ slidesToShow: 4, dots: false, arrows: true }}>
+          <Carousel settings={{ slidesToShow: 3, dots: false, arrows: true }}>
             {nameAndImages.map((item, index) => (
               <div className='w-full px-2' key={index}>
                 <PortfolioCard name={item.name} imageSrc={item.imageSrc} />

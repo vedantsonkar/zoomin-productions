@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { LINKS } from '@/constants';
+
 export default function Footer() {
   const socialLogoClass = 'relative md:h-8 md:w-8 h-6 w-6';
   return (
@@ -63,16 +65,18 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='flex gap-x-20 text-lg font-semibold text-black md:text-xl xl:gap-x-96 xl:text-2xl'>
+      <div className='flex gap-x-20 text-lg font-semibold text-black md:text-xl xl:gap-x-96 xl:text-xl'>
         <div className='flex flex-col gap-y-3 '>
           <Link href='/'>Home</Link>
-          <Link href='/pricing'>Pricing</Link>
-          <Link href='/products'>Products</Link>
+          <Link href='/contact-us'>Pricing</Link>
+          <Link href='/contact-us'>Products</Link>
           <Link href='/about-us'>About Us</Link>
         </div>
         <div className='flex flex-col space-y-3 '>
-          <Link href='/careers'>Careers</Link>
-          <Link href='/community'>Community</Link>
+          <Link href='/contact-us'>Careers</Link>
+          <Link href={LINKS.YOUTUBE} target='_blank'>
+            Community
+          </Link>
           <Link href='/privacy-policy'>Privacy Policy</Link>
         </div>
       </div>
