@@ -19,12 +19,9 @@ const nameAndImages = [
 const PortfolioSection: FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
   const variantsTopLeft: Variants = {
     visible: { opacity: 1, x: 0, y: 0 },
     hidden: { opacity: 0, x: -100, y: -100 },
-  };
   };
 
   useEffect(() => {
@@ -35,7 +32,6 @@ const PortfolioSection: FC = () => {
       controls.start('hidden');
       controls.start('hidden');
     }
-  }, [controls, inView]);
   }, [controls, inView]);
 
   return (
@@ -60,9 +56,6 @@ const PortfolioSection: FC = () => {
         </div>
       </motion.div>
     </div>
-  );
-};
-export default PortfolioSection;
   );
 };
 export default PortfolioSection;

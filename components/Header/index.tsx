@@ -12,12 +12,12 @@ const Header: React.FC = () => {
     if (hamburgerButton) {
       hamburgerButton.classList.toggle('open');
     }
-    setMenuOpen((prev) => !prev);
+    setMenuOpen((prev: boolean) => !prev);
   };
 
   return (
     <>
-      <div className='sticky top-0 z-50 flex h-16 w-full items-center justify-between border-b border-white bg-[#fff] px-12 shadow-lg md:h-20 lg:px-24'>
+      <div className='sticky top-0 z-50 flex h-16 w-full items-center justify-between border-b border-white bg-[#fff] bg-opacity-30 px-12 shadow-lg backdrop-blur-md md:h-20 lg:px-24'>
         <Link href='/' className='relative h-20 w-20 lg:h-24 lg:w-24'>
           <Image
             src={Logo}
