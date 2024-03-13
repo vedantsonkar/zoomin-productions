@@ -41,40 +41,40 @@ const OurClientsSection: FC = () => {
         transition={{ duration: 0.6, delay: 0.6 }}
         className='grid grid-cols-2 place-items-center gap-14 px-10 md:grid-cols-3 md:px-24'
       >
-        <Image src={G2} alt='G2' width={200} height={200} sizes='33vw' />
+        <Image src={G2} alt='G2' width={100} height={100} sizes='33vw' />
         <Image
           src={Bill_Gates_Foundation}
           alt='G2'
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           sizes='33vw'
         />
         <Image
           src={Capacity_Building_Commission}
           alt='Capacity_Building_Commission'
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           sizes='33vw'
         />
         <Image
           src={Animal_Husbandry}
           alt='Animal_Husbandry'
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           sizes='33vw'
         />
         <Image
           src={Delhi_Police}
           alt='Delhi_Police'
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           sizes='33vw'
         />
         <Image
           src={Ministry_of_Education}
           alt='Ministry_of_Education'
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           sizes='33vw'
         />
       </motion.div>
