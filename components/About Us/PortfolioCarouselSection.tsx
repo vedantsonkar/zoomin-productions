@@ -8,8 +8,8 @@ import PortfolioCard from '../PortFolioCard';
 const nameAndImages = [
   { name: 'Parth Shetye', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
   { name: 'Mithila', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
+  { name: 'Swaraj', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
+  { name: 'Dhaval', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
   { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
   { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
   { name: 'G2 Shoot', imageSrc: '/images/pandit log/Parth Ka Photu.png' },

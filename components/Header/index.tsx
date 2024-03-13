@@ -18,19 +18,19 @@ const Header: React.FC = () => {
   return (
     <>
       <div className='sticky top-0 z-50 flex h-16 w-full items-center justify-between border-b border-white bg-[#fff] bg-opacity-30 px-12 shadow-lg backdrop-blur-md md:h-20 lg:px-24'>
-        <Link href='/' className='relative h-20 w-20 lg:h-24 lg:w-24'>
+        <Link href='/' className='relative h-full w-20 lg:w-24'>
           <Image
             src={Logo}
             alt='ZoomIn Productions'
             title='ZoomIn Productions'
             className='object-contain'
             fill
-            sizes='33vw'
+            sizes='10vw'
             priority
             aria-label='Logo'
           />
         </Link>
-        <nav className='flex items-center justify-center gap-x-6 text-xl font-bold max-lg:hidden xl:text-3xl'>
+        <nav className='flex items-center justify-center gap-x-6 text-xl font-bold max-lg:hidden xl:text-xl'>
           <Link
             href='/'
             className='bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr'

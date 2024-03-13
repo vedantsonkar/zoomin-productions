@@ -87,3 +87,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.section-heading {
+  @apply mb-8 text-center text-2xl font-semibold md:text-3xl;
+}
