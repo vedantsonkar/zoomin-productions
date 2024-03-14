@@ -27,19 +27,50 @@ const LINKS = {
 
 const FOUNDERS = [
   {
-    name: 'Dhaval Bhai',
-    position: 'CEO, Founder',
+    name: 'Dhawal Velani',
+    position: 'Founder',
     description:
-      'Visionary leader, creative genius. Redefining storytelling, pushing boundaries. The heartbeat of our success.',
-    image: '/images/pandit log/Parth Ka Photu.png',
+      'A decade of distinguished experience in government, political parties, and brand communication, Dhawal is a seasoned communications professional. His expertise spans content creation, video production, and strategic marketing ecosystems.',
+    image: '/images/team/Founder Dhaval.jpg',
   },
   {
-    name: 'Parth Bhai',
+    name: 'Ajay Raj Dinkar',
     position: 'Co-Founder',
     description:
-      'Visionary leader, creative genius. Redefining storytelling, pushing boundaries. The heartbeat of our success. Visionary leader, creative genius. Redefining storytelling, pushing boundaries. The heartbeat of our success.',
-    image: '/images/pandit log/Parth Ka Photu.png',
+      'A decade of mastery in visual storytelling, transforming each frame into a canvas - from pixel to perfection, building ideas into compelling narratives, bringing stories to life with an exquisite blend of visuals and sound.',
+    image: 'images/team/Co-Founder Ajay.jpg',
   },
 ];
 
-export { FOUNDERS, YOUTUBE_VIDEOS, LINKS };
+const OUR_TEAM = [
+  {
+    name: 'Swaraj Shetty',
+    imageSrc: '/images/team/Swaraj.jpg',
+    twitter: '',
+    instagram: '',
+    linkedin: '',
+  },
+  {
+    name: 'Mithila Naik-Satam',
+    imageSrc: '/images/team/Mithila.jpg',
+    twitter: '',
+    instagram: '',
+    linkedin: '',
+  },
+  {
+    name: 'Himanshu',
+    imageSrc: '/images/team/Parth Ka Photu.png',
+    twitter: '',
+    instagram: '',
+    linkedin: '',
+  },
+  {
+    name: 'Parth Shetye',
+    imageSrc: '/images/team/Parth Ka Photu.png',
+    twitter: '',
+    instagram: '',
+    linkedin: '',
+  },
+];
+
+export { FOUNDERS, YOUTUBE_VIDEOS, LINKS, OUR_TEAM };

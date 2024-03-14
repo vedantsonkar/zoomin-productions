@@ -2,8 +2,6 @@
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation, Variants } from 'framer-motion';
 import { useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 
 const AboutUsSection: React.FC = () => {
   const controls = useAnimation();
@@ -38,7 +36,7 @@ const AboutUsSection: React.FC = () => {
   return (
     <div
       ref={ref}
-      className='flex flex-col gap-y-6 px-8 pt-10 md:gap-y-10 md:px-24 lg:px-36 lg:pt-24 xl:px-48 2xl:px-96'
+      className='flex flex-col gap-y-6 px-8 pt-10 md:gap-y-10 md:px-24 lg:pt-24'
     >
       <motion.h2
         variants={variantsTop}
