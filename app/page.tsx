@@ -12,9 +12,9 @@ export default function Home() {
         classNames={{ root: 'object-fill' }}
         restVideoTags={{ autoPlay: true, preload: 'auto', muted: true }}
       />
-      <div className='my-10 md:my-36'>
+      {/* <div className='my-10 md:my-36'>
         <AnimatedTextSection1 />
-      </div>
+      </div> */}
       <OurClientsSection />
       <div className='my-10'>
         <AnimatedTextSection2 />
