@@ -44,6 +44,20 @@ const FOUNDERS = [
 
 const OUR_TEAM = [
   {
+    name: 'Dhawal Velani',
+    imageSrc: '/images/team/Founder Dhaval.jpg',
+    twitter: '',
+    instagram: '',
+    linkedin: '',
+  },
+  {
+    name: 'Ajay Dinkar',
+    imageSrc: '/images/team/Co-Founder Ajay.jpg',
+    twitter: '',
+    instagram: '',
+    linkedin: '',
+  },
+  {
     name: 'Swaraj Shetty',
     imageSrc: '/images/team/Swaraj.jpg',
     twitter: '',
@@ -59,14 +73,14 @@ const OUR_TEAM = [
   },
   {
     name: 'Himanshu',
-    imageSrc: '/images/team/Parth Ka Photu.png',
+    imageSrc: '/images/team/Parth.png',
     twitter: '',
     instagram: '',
     linkedin: '',
   },
   {
     name: 'Parth Shetye',
-    imageSrc: '/images/team/Parth Ka Photu.png',
+    imageSrc: '/images/team/Parth.png',
     twitter: '',
     instagram: '',
     linkedin: '',
