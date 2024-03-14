@@ -7,7 +7,7 @@ import { NextPage } from 'next';
 const OurTeamPage: NextPage = () => {
   return (
     <div className='mb-20 px-24'>
-      {/* <FoundersSection /> */}
+      <FoundersSection />
 
       <AboutUsSection />
       <h1 className='my-10 w-full text-center text-3xl font-bold'>Our Team</h1>
