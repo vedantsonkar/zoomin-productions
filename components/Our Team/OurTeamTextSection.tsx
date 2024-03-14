@@ -77,7 +77,7 @@ const OurTeamTextSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.3 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-xl font-semibold text-black'
       >
         As a production house, Zoomin Productions has earned a reputation for
         reliability and versatility. Their diverse portfolio spans across
