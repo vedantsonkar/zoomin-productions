@@ -21,6 +21,7 @@ const AnimatedTextSection1: React.FC = () => {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 100 },
   };
+
   // Animate when the element is in view
   useEffect(() => {
     if (inView) {
@@ -39,7 +40,7 @@ const AnimatedTextSection1: React.FC = () => {
         variants={variantsLeft}
         initial='hidden'
         animate={controls}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         className='relative h-[34rem] w-full md:w-24 md:basis-1/2'
       >
         <Image

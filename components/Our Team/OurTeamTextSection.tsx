@@ -30,10 +30,7 @@ const OurTeamTextSection: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <div
-      ref={ref}
-      className='flex flex-col gap-y-6 px-8 pt-10 md:gap-y-10 md:px-24 lg:px-36 lg:pt-24 xl:px-48 2xl:px-96'
-    >
+    <div ref={ref} className='flex flex-col gap-y-6 px-8 md:gap-y-10 md:px-24'>
       <motion.h2
         variants={variantsTop}
         initial='hidden'

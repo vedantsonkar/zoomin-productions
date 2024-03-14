@@ -17,6 +17,7 @@ const FoundersSection: FC = () => {
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: -100 },
   };
+
   // Animate when the element is in view
   useEffect(() => {
     if (inView) {
@@ -27,16 +28,14 @@ const FoundersSection: FC = () => {
   }, [controls, inView]);
 
   return (
-    <div ref={ref}>
-      <div className='mt-20 text-center text-4xl font-bold'>
-        Meet Our Founders!
-      </div>
-      <div className='mb-5 mt-20 grid w-full place-items-center gap-x-6 md:grid-cols-2'>
+    <div ref={ref} className='max-md:px-2'>
+      <div className='text-center text-4xl font-bold'>Meet Our Founders!</div>
+      <div className='my-20 grid w-full place-items-center items-center gap-6 md:grid-cols-2'>
         <motion.div
           variants={variantsLeft}
           initial='hidden'
           animate={controls}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <FoundersCard
             name={FOUNDERS[0].name}
@@ -49,7 +48,7 @@ const FoundersSection: FC = () => {
           variants={variantsRight}
           initial='hidden'
           animate={controls}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <FoundersCard
             name={FOUNDERS[1].name}

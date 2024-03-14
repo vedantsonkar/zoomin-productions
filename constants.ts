@@ -85,7 +85,7 @@ const FOUNDERS = [
     name: 'Dhawal Velani',
     position: 'Founder',
     description:
-      'A decade of distinguished experience in government, political parties, and brand communication, Dhawal is a seasoned communications professional. His expertise spans content creation, video production, and strategic marketing ecosystems.',
+      'A decade of distinguished experience in government, political parties, and brand communication, Dhawal is a seasoned communications professional.',
     image: '/images/team/Dhawal.jpg',
   },
   {

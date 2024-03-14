@@ -91,3 +91,23 @@ body {
 .section-heading {
   @apply mb-8 text-center text-2xl font-semibold md:text-3xl;
 }
+
+.bg-container {
+  background-color: #fff;
+  width: 100%;
+  background-image: linear-gradient(60deg, #65ffd1, #a760f8, #ff8c8c);
+  background-size: 600% 600%;
+  animation: bgAnimatedGradient 12s infinite linear;
+}
+
+@keyframes bgAnimatedGradient {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 85%;
+  }
+}

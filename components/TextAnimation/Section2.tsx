@@ -24,6 +24,7 @@ const AnimatedTextSection2: React.FC = () => {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: -100 },
   };
+
   // Animate when the element is in view
   useEffect(() => {
     if (inView) {

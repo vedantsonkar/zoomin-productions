@@ -46,7 +46,10 @@ const FeaturedFilms: FC = () => {
               responsive: [
                 { breakpoint: 1000, settings: { slidesToShow: 3 } },
                 { breakpoint: 786, settings: { slidesToShow: 2 } },
-                { breakpoint: 500, settings: { slidesToShow: 1 } },
+                {
+                  breakpoint: 500,
+                  settings: { slidesToShow: 1, centerMode: true },
+                },
               ],
             }}
           >

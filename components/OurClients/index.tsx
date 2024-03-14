@@ -36,7 +36,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
     }
   }, [controls, inView]);
   return (
-    <div className='flex w-full flex-col gap-y-24 py-10' ref={ref}>
+    <div className='flex w-full flex-col gap-y-24' ref={ref}>
       <h3 className='text-center text-[1.8rem] font-bold lg:text-[2.4rem] xl:text-[3rem]'>
         {heading}
       </h3>

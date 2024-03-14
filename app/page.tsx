@@ -6,19 +6,15 @@ import VideoPlayer from '@/components/VideoPlayer';
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-start justify-start bg-[#fff]'>
+    <main className='mb-16 flex flex-col items-start justify-start gap-y-16 bg-white md:mb-36 md:gap-y-36'>
       <VideoPlayer
         videoPath='/videos/Landing_Video.mp4'
         classNames={{ root: 'object-fill' }}
         restVideoTags={{ autoPlay: true, preload: 'auto', muted: true }}
       />
-      <div className='my-10 md:my-36'>
-        <AnimatedTextSection1 />
-      </div>
+      <AnimatedTextSection1 />
       <OurClientsSection />
-      <div className='my-10'>
-        <AnimatedTextSection2 />
-      </div>
+      <AnimatedTextSection2 />
       <FeaturedFilms />
     </main>
   );
