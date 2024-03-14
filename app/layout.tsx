@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import Script from 'next/script';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { BASE_DOMAIN } from '@/constants';
 
 const inter = Poppins({ weight: '500', subsets: ['latin'] });
 
@@ -13,6 +14,16 @@ export const metadata: Metadata = {
   title: 'ZoomIn Productions',
   description:
     'We at ZoomIn are a creative powerhouse. We embrace challenges and adapt to your needs. We strategize and innovate. We create bespoke content that empowers brands, amplifies digital presence, and enriches your brand value.',
+  metadataBase: new URL(BASE_DOMAIN),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    images: ['/images/global/zoomin_logo.png'],
+  },
+  twitter: {
+    images: ['/images/global/zoomin_logo.png'],
+  },
 };
 
 export default function RootLayout({
