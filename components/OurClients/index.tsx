@@ -12,7 +12,13 @@ import Animal_Husbandry from '@/public/images/clients/Animal_Husbandry.webp';
 import Delhi_Police from '@/public/images/clients/Delhi_Police.webp';
 import Ministry_of_Education from '@/public/images/clients/Ministry_of_Education.webp';
 
-const OurClientsSection: FC = () => {
+type OurClientsSectionProps = {
+  heading?: string;
+};
+
+const OurClientsSection: FC<OurClientsSectionProps> = ({
+  heading = 'People Who Trust Us',
+}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -32,7 +38,7 @@ const OurClientsSection: FC = () => {
   return (
     <div className='flex w-full flex-col gap-y-24 py-10' ref={ref}>
       <h3 className='text-center text-[1.8rem] font-bold lg:text-[2.4rem] xl:text-[3rem]'>
-        People Who Trust Us
+        {heading}
       </h3>
       <motion.div
         variants={variantsBottom}
