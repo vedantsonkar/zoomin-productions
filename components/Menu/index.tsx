@@ -1,29 +1,54 @@
-import Link from 'next/link';
+'use client';
+import { useRouter } from 'next/navigation';
+import { FC } from 'react';
 
-const Menu = () => {
-  const linkClass =
-    'text-transparent transition-colors focus:bg-gradient-to-r bg-white bg-clip-text from-[#ff9595] via-[#81da6f] to-[#49dfd2]';
+type MenuProps = {
+  closeMenu: () => void;
+};
+
+const Menu: FC<MenuProps> = ({ closeMenu }) => {
+  const lClass =
+    'text-transparent transition-colors bg-black focus:bg-gradient-to-r bg-clip-text from-[#ff9595] via-[#81da6f] to-[#49dfd2]';
+  const router = useRouter();
+
+  const onClick = (url: string) => {
+    closeMenu();
+    router.push(url);
+  };
+
   return (
-    <nav className='md:10p-20 fixed top-16 z-10 flex w-full flex-col items-center gap-y-10 overflow-y-auto bg-[#EDEAE9] py-10 text-xl font-bold lg:hidden'>
-      <Link href='/' className={linkClass} aria-label='Home'>
+    <nav className='max-w-screen fixed top-16 z-10 flex h-full w-full flex-col items-center gap-y-10 overflow-y-auto bg-pastel-pink bg-opacity-30 py-10 text-xl font-bold backdrop-blur-md lg:hidden'>
+      <button onClick={() => onClick('/')} className={lClass} aria-label='Home'>
         Home
-      </Link>
-      <Link href='/about-us' className={linkClass} aria-label='About Us'>
+      </button>
+      <button
+        onClick={() => onClick('/about-us')}
+        className={lClass}
+        aria-label='About Us'
+      >
         About Us
-      </Link>
-      <Link href='/our-team' className={linkClass} aria-label='Our Projects'>
+      </button>
+      <button
+        onClick={() => onClick('/our-team')}
+        className={lClass}
+        aria-label='Our Team'
+      >
         Our Team
-      </Link>
-      <Link
-        href='/our-projects'
-        className={linkClass}
+      </button>
+      <button
+        onClick={() => onClick('/our-projects')}
+        className={lClass}
         aria-label='Our Projects'
       >
         Our Projects
-      </Link>
-      <Link href='/contact-us' className={linkClass} aria-label='Contact Us'>
+      </button>
+      <button
+        onClick={() => onClick('/')}
+        className={lClass}
+        aria-label='Contact Us'
+      >
         Contact Us
-      </Link>
+      </button>
     </nav>
   );
 };
