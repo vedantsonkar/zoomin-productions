@@ -25,7 +25,7 @@ const PortfolioSection: FC = () => {
   }, [controls, inView]);
 
   return (
-    <div ref={ref} className='my-10 w-full px-24'>
+    <div ref={ref} className='w-full px-24'>
       <motion.div
         initial='hidden'
         animate={controls}

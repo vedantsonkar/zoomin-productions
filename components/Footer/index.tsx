@@ -68,15 +68,13 @@ export default function Footer() {
       <div className='flex gap-x-20 text-lg font-semibold text-black md:text-xl xl:gap-x-96 xl:text-xl'>
         <div className='flex flex-col gap-y-3 '>
           <Link href='/'>Home</Link>
-          <Link href='/contact-us'>Pricing</Link>
-          <Link href='/contact-us'>Products</Link>
           <Link href='/about-us'>About Us</Link>
+          <Link href='/our-team'>Our Team</Link>
+          <Link href='/our-projects'>Our Projects</Link>
         </div>
         <div className='flex flex-col space-y-3 '>
           <Link href='/contact-us'>Careers</Link>
-          <Link href={LINKS.YOUTUBE} target='_blank'>
-            Community
-          </Link>
+          <Link href='/contact-us'>Contact Us</Link>
           <Link href='/privacy-policy'>Privacy Policy</Link>
         </div>
       </div>
