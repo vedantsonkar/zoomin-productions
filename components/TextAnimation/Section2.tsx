@@ -10,19 +10,19 @@ const AnimatedTextSection2: React.FC = () => {
   // Define animation variants
   const variantsRight: Variants = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: 100 },
+    hidden: { opacity: 0, x: '5vw' },
   };
   const variantsLeft: Variants = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: '-5vw' },
   };
   const variantsBottom: Variants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: '5vh' },
   };
   const variantsTop: Variants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -100 },
+    hidden: { opacity: 0, y: '-5vh' },
   };
 
   // Animate when the element is in view

@@ -11,15 +11,15 @@ const AnimatedTextSection1: React.FC = () => {
   // Define animation variants
   const variantsRight: Variants = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: 100 },
+    hidden: { opacity: 0, x: '5vw' },
   };
   const variantsLeft: Variants = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: '-5vw' },
   };
   const variantsBottom: Variants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: '5vh' },
   };
 
   // Animate when the element is in view
@@ -47,7 +47,7 @@ const AnimatedTextSection1: React.FC = () => {
           src='/images/global/Production_House_Vector.jpg'
           alt='Production House'
           fill
-          sizes='40vw'
+          sizes='(max-width: 768px): 70vw, 40vw'
           className='rounded-md object-cover'
         />
       </motion.div>

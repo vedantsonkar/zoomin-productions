@@ -13,7 +13,7 @@ const FeaturedFilms: FC = () => {
   // Define animation variants
   const variantsBottom: Variants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -100 },
+    hidden: { opacity: 0, y: '-5vh' },
   };
 
   // Animate when the element is in view

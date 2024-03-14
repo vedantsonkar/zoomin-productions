@@ -25,7 +25,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
   // Define animation variants
   const variantsBottom: Variants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 150 },
+    hidden: { opacity: 0, y: '10vh' },
   };
 
   useEffect(() => {

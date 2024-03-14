@@ -11,7 +11,7 @@ const PortfolioSection: FC = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
   const variantsTopLeft: Variants = {
     visible: { opacity: 1, x: 0, y: 0 },
-    hidden: { opacity: 0, x: -100, y: -100 },
+    hidden: { opacity: 0, x: '-5vw', y: '-5vh' },
   };
 
   useEffect(() => {

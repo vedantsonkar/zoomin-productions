@@ -11,11 +11,11 @@ const FoundersSection: FC = () => {
 
   const variantsRight: Variants = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: 100 },
+    hidden: { opacity: 0, x: '5vw' },
   };
   const variantsLeft: Variants = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: '-5vw' },
   };
 
   // Animate when the element is in view
