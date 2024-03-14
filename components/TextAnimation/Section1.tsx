@@ -47,7 +47,7 @@ const AnimatedTextSection1: React.FC = () => {
           src='/images/global/Production_House_Vector.jpg'
           alt='Production House'
           fill
-          sizes='(max-width: 768px): 70vw, 40vw'
+          sizes='(max-width: 768px) 70vw, 40vw'
           className='rounded-md object-cover'
         />
       </motion.div>
