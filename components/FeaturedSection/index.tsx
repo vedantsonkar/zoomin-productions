@@ -26,7 +26,7 @@ const FeaturedFilms: FC = () => {
   }, [controls, inView]);
 
   return (
-    <div ref={ref} className='my-10 w-full px-12 md:px-24'>
+    <div ref={ref} className='w-full px-12 md:px-24'>
       <motion.div
         variants={variantsBottom}
         initial='hidden'

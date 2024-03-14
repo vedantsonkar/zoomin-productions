@@ -4,13 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { FC, useEffect } from 'react';
 import Carousel from '../Carousel';
 import PortfolioCard from '../PortFolioCard';
-
-const nameAndImages = [
-  { name: 'Parth Shetye', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'Mithila', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'Swaraj', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-  { name: 'Dhaval', imageSrc: '/images/pandit log/Parth Ka Photu.png' },
-];
+import { OUR_TEAM } from '@/constants';
 
 const PortfolioSection: FC = () => {
   const controls = useAnimation();
@@ -31,7 +25,7 @@ const PortfolioSection: FC = () => {
   }, [controls, inView]);
 
   return (
-    <div ref={ref} className='my-10 w-full px-24'>
+    <div ref={ref} className='w-full px-24'>
       <motion.div
         initial='hidden'
         animate={controls}
@@ -48,7 +42,7 @@ const PortfolioSection: FC = () => {
         </p>
         <div className='block w-full'>
           <Carousel settings={{ slidesToShow: 3, dots: false, arrows: true }}>
-            {nameAndImages.map((item, index) => (
+            {OUR_TEAM.map((item, index) => (
               <div className='w-full px-2' key={index}>
                 <PortfolioCard name={item.name} imageSrc={item.imageSrc} />
               </div>

@@ -10,7 +10,7 @@ const OurTeamPage: NextPage = () => {
       <FoundersSection />
       <OurTeamTextSection />
       <h1 className='my-10 w-full text-center text-3xl font-bold'>Our Team</h1>
-      <div className='grid grid-cols-2 gap-6 px-20 md:grid-cols-4'>
+      <div className='grid grid-cols-2 gap-x-6 gap-y-12 px-20 md:grid-cols-3'>
         {OUR_TEAM.map((item, index) => (
           <div key={index}>
             <PortfolioCard imageSrc={item.imageSrc} name={item.name} />
