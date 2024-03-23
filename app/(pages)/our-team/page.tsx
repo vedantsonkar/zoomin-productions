@@ -8,7 +8,9 @@ const OurTeamPage: NextPage = () => {
   return (
     <div className='mb-16 justify-start space-y-16 pt-8 md:mb-36 md:space-y-36 md:px-24'>
       <h1 className='sr-only'>Zoomin Team</h1>
-      <FoundersSection />
+      <div className='max-md:px-1'>
+        <FoundersSection />
+      </div>
       <OurTeamTextSection />
       <h1 className='w-full text-center text-3xl font-bold'>Our Team</h1>
       <div className='grid grid-cols-2 gap-x-6 gap-y-12 px-8 md:grid-cols-3 md:px-20'>

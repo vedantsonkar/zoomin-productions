@@ -6,7 +6,13 @@ import { motion, useAnimation, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { YOUTUBE_VIDEOS } from '@/constants';
 
-const FeaturedFilms: FC = () => {
+interface FeaturedFilmsProps {
+  title?: string;
+}
+
+const FeaturedFilms: FC<FeaturedFilmsProps> = ({
+  title = 'Our Featured Films',
+}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -26,15 +32,15 @@ const FeaturedFilms: FC = () => {
   }, [controls, inView]);
 
   return (
-    <div ref={ref} className='w-full px-12 md:px-24'>
+    <div ref={ref} className='w-full md:px-24'>
       <motion.div
         variants={variantsBottom}
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <h3 className='section-heading'>Our Featured Films</h3>
-        <p className='mb-10 text-center text-lg'>
+        <h3 className='section-heading max-md:px-12'>{title}</h3>
+        <p className='mb-10 text-center text-lg max-md:px-12'>
           This is a curated collection of some of our best work!
         </p>
         <div className='block w-full'>
@@ -43,12 +49,27 @@ const FeaturedFilms: FC = () => {
               slidesToShow: 4,
               dots: false,
               arrows: true,
+              autoplay: true,
               responsive: [
                 { breakpoint: 1000, settings: { slidesToShow: 3 } },
                 { breakpoint: 786, settings: { slidesToShow: 2 } },
                 {
-                  breakpoint: 500,
-                  settings: { slidesToShow: 1, centerMode: true },
+                  breakpoint: 430,
+                  settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '120px',
+                    arrows: false,
+                  },
+                },
+                {
+                  breakpoint: 387,
+                  settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '70px',
+                    arrows: false,
+                  },
                 },
               ],
             }}

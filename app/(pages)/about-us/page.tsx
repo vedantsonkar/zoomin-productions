@@ -15,7 +15,7 @@ const AboutUsPage: NextPage = () => {
 
       <div className='mb-16 space-y-16 md:mb-36 md:space-y-36'>
         <AboutUsSection />
-        <FeaturedFilms />
+        <FeaturedFilms title='Our Projects' />
         <PortfolioSection />
       </div>
     </>

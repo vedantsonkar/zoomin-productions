@@ -82,7 +82,7 @@ const AnimatedTextSection2: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.3 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-xl font-semibold text-[#000] max-md:hidden'
       >
         We make the A-Z of content with our bunch of creative geniuses
         determined to bring out the best in all parts of the production process.
@@ -95,7 +95,7 @@ const AnimatedTextSection2: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.6 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-xl font-semibold text-[#000] max-md:hidden'
       >
         Being the pioneers of the filmmaking industry, we bring together a full
         house of engaging, memorable and effective chronicles that speak for

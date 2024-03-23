@@ -85,7 +85,7 @@ const AboutUsSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.3 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-xl font-semibold text-[#000] max-md:hidden'
       >
         We craft handmade stories, captured through our professional lens with a
         deep understanding of our product and all the perseverance that goes
@@ -103,7 +103,7 @@ const AboutUsSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.6 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-xl font-semibold text-[#000] max-md:hidden'
       >
         Griffin Pictures also doubles as a TVC production house that is always
         updated with new technology and innovative ideas. With a plethora of
