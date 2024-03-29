@@ -36,7 +36,7 @@ const OurTeamTextSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className='font-cedarville_cursive bg-gradient-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-center text-2xl font-bold text-transparent md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]'
+        className='heading bg-gradient-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-transparent md:leading-tight'
       >
         Our Team
         <span className='text-black'> at Zoomin</span>
@@ -47,7 +47,7 @@ const OurTeamTextSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-lg font-medium text-[#000]'
       >
         In the bustling world of video production, Zoomin Productions emerges as
         a beacon of excellence and innovation. With a team of dedicated
@@ -62,7 +62,7 @@ const OurTeamTextSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.0 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-lg font-medium text-[#000]'
       >
         What sets Zoomin Productions apart is their unwavering commitment to
         quality and creativity. With a finger on the pulse of emerging trends
@@ -77,7 +77,7 @@ const OurTeamTextSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.3 }}
-        className='text-xl font-semibold text-black max-md:hidden'
+        className='text-lg font-medium text-black max-md:hidden'
       >
         As a production house, Zoomin Productions has earned a reputation for
         reliability and versatility. Their diverse portfolio spans across
