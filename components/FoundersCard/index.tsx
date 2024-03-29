@@ -15,9 +15,9 @@ const FoundersCard: FC<FounderCardProps> = ({
   description,
 }) => {
   return (
-    <div className='rounded-full border bg-white p-6 shadow-lg'>
+    <div className='w-full rounded-br-[5rem] rounded-tl-[5rem] border bg-[#38383a] bg-opacity-10 p-6 shadow-xl backdrop-blur-lg'>
       <div className='flex items-center md:flex-row'>
-        <div className='relative h-28 w-28 flex-shrink-0 md:h-60 md:w-60 '>
+        <div className='relative h-28 w-28 flex-shrink-0 md:h-56 md:w-56'>
           <Image
             src={image}
             alt='Profile Image'

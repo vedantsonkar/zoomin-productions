@@ -29,8 +29,7 @@ const FoundersSection: FC = () => {
 
   return (
     <div ref={ref} className='max-md:px-2'>
-      <div className='text-center text-4xl font-bold'>Meet Our Founders!</div>
-      <div className='my-20 grid w-full place-items-center items-center gap-6 md:grid-cols-2'>
+      <div className='my-20 grid w-full place-items-center items-center gap-6 lg:grid-cols-2'>
         <motion.div
           variants={variantsLeft}
           initial='hidden'

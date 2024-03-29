@@ -6,12 +6,10 @@ import OurClientsSection from '@/components/OurClients';
 
 const OurTeamPage: NextPage = () => {
   return (
-    <div className='mb-20 space-y-20'>
+    <div className='mb-20 space-y-20 2xl:px-52'>
       <AboutUsSection />
       <OurClientsSection heading='Organizations we have worked with' />
-      <h1 className='my-10 w-full text-center text-3xl font-bold'>
-        Our Projects
-      </h1>
+      <h1 className='heading my-10'>Our Projects</h1>
       <div className='grid grid-cols-2 gap-6 md:grid-cols-4 md:px-20'>
         {YOUTUBE_VIDEOS.map((item, index) => (
           <div key={index}>

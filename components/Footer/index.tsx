@@ -53,15 +53,6 @@ export default function Footer() {
               className='object-contain'
             />
           </Link>
-          <Link href='/' className={socialLogoClass}>
-            <Image
-              src='/images/global/social_logo/icon-pinterest.svg'
-              alt='Pinterest'
-              fill
-              aria-label='Pinterest'
-              className='object-contain'
-            />
-          </Link>
         </div>
       </div>
 

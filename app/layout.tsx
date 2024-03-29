@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Poppins, Cedarville_Cursive } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -8,7 +8,18 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BASE_DOMAIN } from '@/constants';
 
-const inter = Poppins({ weight: '500', subsets: ['latin'] });
+const poppins = Poppins({
+  weight: '500',
+  subsets: ['latin'],
+  variable: '--font-poppins',
+});
+
+const cedarville_cursive = Cedarville_Cursive({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-cedarville_cursive',
+});
 
 export const metadata: Metadata = {
   title: 'ZoomIn Productions',
@@ -39,11 +50,11 @@ export default function RootLayout({
         (window,document,'script','dataLayer','GTM-M379LVK3');`}</Script>
         <Script
           id='twitter-widgets'
-          async
+          defer
           src='https://platform.twitter.com/widgets.js'
-        ></Script>
+        />
       </head>
-      <body className={inter.className}>
+      <body className={`${poppins.variable} ${cedarville_cursive.variable}`}>
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-M379LVK3'

@@ -37,7 +37,7 @@ const AnimatedTextSection2: React.FC = () => {
   return (
     <div
       ref={ref}
-      className='flex flex-col gap-y-6 px-8 pt-10 md:gap-y-10 md:px-24 lg:px-36 lg:pt-24'
+      className='flex flex-col gap-y-6 px-8 md:gap-y-10 md:px-24 lg:px-36'
     >
       <motion.h2
         variants={variantsTop}
@@ -55,7 +55,7 @@ const AnimatedTextSection2: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-center text-xl font-medium text-[#000] sm:text-left'
       >
         ZoomIn is a full-service film production company, a phenomenal
         multi-functioning, short film production house and an ad film production
@@ -69,7 +69,7 @@ const AnimatedTextSection2: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.0 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-center text-xl font-medium text-[#000] sm:text-left'
       >
         We combine the right aesthetics with impactful and compelling narratives
         to bring out a creative story. Engaging content is our forte; we house
@@ -78,37 +78,11 @@ const AnimatedTextSection2: React.FC = () => {
         tales that are gripping, ingenious, and empathetic.
       </motion.p>
       <motion.p
-        variants={variantsRight}
-        initial='hidden'
-        animate={controls}
-        transition={{ duration: 0.5, delay: 1.3 }}
-        className='text-xl font-semibold text-[#000] max-md:hidden'
-      >
-        We make the A-Z of content with our bunch of creative geniuses
-        determined to bring out the best in all parts of the production process.
-        Whether it is a short film production, commercial TVC ad, music video,
-        documentary, corporate video, online promo, viral video or YouTube video
-        production, we do it all.
-      </motion.p>
-      <motion.p
-        variants={variantsLeft}
-        initial='hidden'
-        animate={controls}
-        transition={{ duration: 0.5, delay: 1.6 }}
-        className='text-xl font-semibold text-[#000] max-md:hidden'
-      >
-        Being the pioneers of the filmmaking industry, we bring together a full
-        house of engaging, memorable and effective chronicles that speak for
-        brands. This makes us the go-to production house for many popular brands
-        across India. We believe our work speaks for itself. Browse our projects
-        for videos and short films created by ZoomIn Productions.
-      </motion.p>
-      <motion.p
         variants={variantsBottom}
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.9 }}
-        className='flex flex-col items-start justify-center gap-y-10 text-left text-xl font-semibold text-[#000]'
+        className='flex flex-col items-start justify-center gap-y-10 text-center text-xl font-medium text-[#000] sm:text-left'
       >
         <span>
           <a

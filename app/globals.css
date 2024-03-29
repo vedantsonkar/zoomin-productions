@@ -25,6 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
   overflow-x: hidden;
+  @apply font-poppins bg-white;
 }
 
 @layer utilities {
@@ -99,6 +100,16 @@ body {
   background-image: linear-gradient(60deg, #65ffd1, #a760f8, #ff8c8c);
   background-size: 600% 600%;
   animation: bgAnimatedGradient 12s infinite linear;
+}
+
+.heading {
+  @apply font-cedarville_cursive text-center text-[1.8rem] font-bold lg:text-[2.4rem] xl:text-[3rem];
+}
+
+.polygon-div {
+  width: 550px;
+  aspect-ratio: 1;
+  clip-path: polygon(50% 0%, 80% 20%, 80% 80%, 50% 100%, 20% 80%, 20% 20%);
 }
 
 @keyframes bgAnimatedGradient {

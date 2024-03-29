@@ -17,8 +17,8 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <div className='sticky top-0 z-10 flex h-16 w-full items-center justify-between bg-pastel-pink bg-opacity-30 px-12 shadow-lg backdrop-blur-md md:h-20 lg:px-24'>
-        <Link href='/' className='relative h-full w-20 lg:w-24'>
+      <div className='sticky top-0 z-10 flex h-16 w-full items-center justify-between bg-pastel-pink bg-opacity-30 px-12 shadow-lg backdrop-blur-md md:h-28 lg:px-24'>
+        <Link href='/' className='relative h-full w-20 lg:w-28'>
           <Image
             src={Logo}
             alt='ZoomIn Productions'
@@ -30,38 +30,38 @@ const Header: React.FC = () => {
             aria-label='Logo'
           />
         </Link>
-        <nav className='flex items-center justify-center gap-x-6 text-xl font-bold max-lg:hidden xl:text-xl'>
+        <nav className='flex items-center justify-center gap-x-6 text-xl font-bold max-lg:hidden xl:text-2xl 2xl:text-3xl'>
           <Link
             href='/'
-            className='bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr'
+            className='bg-black bg-clip-text text-transparent transition-colors hover:bg-[#A0383F]'
             aria-label='Home'
           >
             Home
           </Link>
           <Link
             href='/about-us'
-            className='bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr'
+            className='bg-black bg-clip-text text-transparent transition-colors hover:bg-[#A0383F]'
             aria-label='About Us'
           >
             About Us
           </Link>
           <Link
             href='/our-team'
-            className='bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr'
+            className='bg-black bg-clip-text text-transparent transition-colors hover:bg-[#A0383F]'
             aria-label='Our Projects'
           >
             Our Team
           </Link>
           <Link
             href='/our-projects'
-            className='bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr'
+            className='bg-black bg-clip-text text-transparent transition-colors hover:bg-[#A0383F]'
             aria-label='Our Projects'
           >
             Our Projects
           </Link>
           <Link
             href='/contact-us'
-            className='bg-black from-[#ff9595] via-[#81da6f] to-[#49dfd2] bg-clip-text text-transparent transition-colors hover:bg-gradient-to-tr'
+            className='bg-black bg-clip-text text-transparent transition-colors hover:bg-[#A0383F]'
             aria-label='Contact Us'
           >
             Contact Us

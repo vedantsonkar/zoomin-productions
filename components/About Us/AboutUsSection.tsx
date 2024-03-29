@@ -57,7 +57,7 @@ const AboutUsSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-xl font-medium text-[#000]'
       >
         At ZoomIn Productions, our aim is to bring an idea to reality with a
         touch of imagination. As a video production company in Mumbai, we create
@@ -70,7 +70,7 @@ const AboutUsSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.0 }}
-        className='text-xl font-semibold text-[#000]'
+        className='text-xl font-medium text-[#000]'
       >
         In the era of modern moviemaking, we direct ourselves on the path of
         redefining benchmarks. Just like the dawning of a mythical creature, our
@@ -81,43 +81,11 @@ const AboutUsSection: React.FC = () => {
         all our expertise and passion into the end product..
       </motion.p>
       <motion.p
-        variants={variantsRight}
-        initial='hidden'
-        animate={controls}
-        transition={{ duration: 0.5, delay: 1.3 }}
-        className='text-xl font-semibold text-[#000] max-md:hidden'
-      >
-        We craft handmade stories, captured through our professional lens with a
-        deep understanding of our product and all the perseverance that goes
-        into making stories that click- literally! You can count on us to create
-        a thumb-stopping film or video that could take us to great heights of
-        success, together. Rest assured, we value every brand that gives us the
-        golden opportunity to be their video creators or filmmakers across all
-        platforms- be it social media, websites, and other digital platforms.
-        Explore our film production house- A world of gripping stories that are
-        woven creatively for the audience. Come take a plunge into the world of
-        light and magic!
-      </motion.p>
-      <motion.p
-        variants={variantsLeft}
-        initial='hidden'
-        animate={controls}
-        transition={{ duration: 0.5, delay: 1.6 }}
-        className='text-xl font-semibold text-[#000] max-md:hidden'
-      >
-        Griffin Pictures also doubles as a TVC production house that is always
-        updated with new technology and innovative ideas. With a plethora of
-        cutting-edge services we offer such as ad filmmaking, corporate videos,
-        short films, product shoot, 360-degree videos, VFX, editing, and audio
-        mixing, we provide you with a wholesome experience of everything under
-        the BIG umbrella of production.
-      </motion.p>
-      <motion.p
         variants={variantsBottom}
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 1.9 }}
-        className='flex flex-col items-start justify-center gap-y-10 text-left text-xl font-semibold text-[#000]'
+        className='flex flex-col items-start justify-center gap-y-10 text-left text-xl font-medium text-[#000]'
       >
         Get in touch with us if you are looking for video production services
         with our Ad production house

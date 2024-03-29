@@ -3,23 +3,22 @@ import { Variants, useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FC, useEffect } from 'react';
 import Carousel from '../Carousel';
-import PortfolioCard from '../PortFolioCard';
 import { OUR_TEAM } from '@/constants';
+import PortfolioCard from '../PortfolioCard';
+import Link from 'next/link';
 
 const PortfolioSection: FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
-  const variantsTopLeft: Variants = {
+  const variantsBottomLeft: Variants = {
     visible: { opacity: 1, x: 0, y: 0 },
-    hidden: { opacity: 0, x: '-5vw', y: '-5vh' },
+    hidden: { opacity: 0, x: '5vw', y: '5vh' },
   };
 
   useEffect(() => {
     if (inView) {
       controls.start('visible');
-      controls.start('visible');
     } else {
-      controls.start('hidden');
       controls.start('hidden');
     }
   }, [controls, inView]);
@@ -29,11 +28,13 @@ const PortfolioSection: FC = () => {
       <motion.div
         initial='hidden'
         animate={controls}
-        variants={variantsTopLeft}
+        variants={variantsBottomLeft}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <h3 className='section-heading'>Our Team</h3>
-        <p className='mb-12 px-14 text-center font-semibold sm:px-20 md:px-56'>
+        <Link href='/our-team' className='hover:underline'>
+          <h3 className='heading'>Our Team</h3>
+        </Link>
+        <p className='mb-12 px-14 text-center text-lg sm:px-20 md:px-56'>
           Our dynamic team is a collective force of creativity and expertise,
           specializing in the realms of video production and content generation.
           Comprising seasoned professionals with a passion for visual

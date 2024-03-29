@@ -5,6 +5,7 @@ import VideoCard from '../VideoCard';
 import { motion, useAnimation, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { YOUTUBE_VIDEOS } from '@/constants';
+import Link from 'next/link';
 
 interface FeaturedFilmsProps {
   title?: string;
@@ -39,7 +40,9 @@ const FeaturedFilms: FC<FeaturedFilmsProps> = ({
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <h3 className='section-heading max-md:px-12'>{title}</h3>
+        <Link href='/our-projects' className='hover:underline'>
+          <h3 className='heading'>{title}</h3>
+        </Link>
         <p className='mb-10 text-center text-lg max-md:px-12'>
           This is a curated collection of some of our best work!
         </p>
@@ -52,7 +55,10 @@ const FeaturedFilms: FC<FeaturedFilmsProps> = ({
               autoplay: true,
               responsive: [
                 { breakpoint: 1000, settings: { slidesToShow: 3 } },
-                { breakpoint: 786, settings: { slidesToShow: 2 } },
+                {
+                  breakpoint: 786,
+                  settings: { slidesToShow: 2, arrows: false },
+                },
                 {
                   breakpoint: 430,
                   settings: {
