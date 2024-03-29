@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { FC, useEffect } from 'react';
 import Carousel from '../Carousel';
 import { OUR_TEAM } from '@/constants';
-import PortfolioCard from '@/components/PortfolioCard';
+import PortfolioCard from '../PortfolioCard';
 import Link from 'next/link';
 
 const PortfolioSection: FC = () => {

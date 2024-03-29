@@ -22,4 +22,5 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ imageSrc, name }) => {
     </div>
   );
 };
+
 export default PortfolioCard;
