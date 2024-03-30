@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.zoominproductions.in/sitemap.xml
+Sitemap: https://www.zoomin.productions/sitemap.xml

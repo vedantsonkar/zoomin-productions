@@ -141,6 +141,6 @@ const OUR_TEAM = [
 ];
 
 const BASE_DOMAIN =
-  process.env.NEXT_PUBLIC_BASE_DOMAIN || 'https://www.zoominproductions.in';
+  process.env.NEXT_PUBLIC_BASE_DOMAIN || 'https://www.zoomin.productions';
 
 export { FOUNDERS, YOUTUBE_VIDEOS, LINKS, OUR_TEAM, BASE_DOMAIN };
