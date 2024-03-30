@@ -56,7 +56,11 @@ const PortfolioSection: FC = () => {
           >
             {OUR_TEAM.map((item, index) => (
               <div className='w-full px-2' key={index}>
-                <PortfolioCard name={item.name} imageSrc={item.imageSrc} />
+                <PortfolioCard
+                  name={item.name}
+                  imageSrc={item.imageSrc}
+                  position={item.position}
+                />
               </div>
             ))}
           </Carousel>
