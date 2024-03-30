@@ -13,7 +13,7 @@ export default function Home() {
         classNames={{ root: 'object-fill' }}
         restVideoTags={{ autoPlay: true, preload: 'auto', muted: true }}
       />
-      <div className='mt-12 flex w-full flex-col items-start justify-start gap-y-16 md:mt-36 md:gap-y-36 xl:px-36 2xl:px-52'>
+      <div className='mt-12 flex w-full flex-col items-start justify-start gap-y-16 md:mt-36 md:gap-y-36 2xl:px-52'>
         <AnimatedTextSection1 />
         <OurClientsSection />
         <AnimatedTextSection2 />

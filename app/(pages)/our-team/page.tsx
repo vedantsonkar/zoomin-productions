@@ -16,7 +16,11 @@ const OurTeamPage: NextPage = () => {
       <div className='grid grid-cols-2 gap-x-6 gap-y-12 px-8 md:grid-cols-3 md:px-20'>
         {OUR_TEAM.map((item, index) => (
           <div key={index}>
-            <PortfolioCard imageSrc={item.imageSrc} name={item.name} />
+            <PortfolioCard
+              imageSrc={item.imageSrc}
+              name={item.name}
+              position={item.position}
+            />
           </div>
         ))}
       </div>
