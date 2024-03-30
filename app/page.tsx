@@ -3,9 +3,6 @@ import OurClientsSection from '@/components/OurClients';
 import AnimatedTextSection1 from '@/components/TextAnimation/Section1';
 import AnimatedTextSection2 from '@/components/TextAnimation/Section2';
 import VideoPlayer from '@/components/VideoPlayer';
-import { BASE_DOMAIN } from '@/constants';
-import { Suspense } from 'react';
-import Image from 'next/image';
 
 export default function Home() {
   return (

@@ -50,7 +50,8 @@ export default function RootLayout({
         (window,document,'script','dataLayer','GTM-M379LVK3');`}</Script>
         <Script
           id='twitter-widgets'
-          defer
+          async={true}
+          type='module'
           src='https://platform.twitter.com/widgets.js'
         />
       </head>
