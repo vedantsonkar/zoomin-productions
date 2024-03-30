@@ -101,6 +101,7 @@ const OUR_TEAM = [
   {
     name: 'Swaraj Shetty',
     imageSrc: '/images/team/Swaraj.jpg',
+    position: '',
     twitter: '',
     instagram: '',
     linkedin: '',
@@ -108,13 +109,15 @@ const OUR_TEAM = [
   {
     name: 'Mithila Naik-Satam',
     imageSrc: '/images/team/Mithila.jpg',
+    position: '',
     twitter: '',
     instagram: '',
     linkedin: '',
   },
   {
-    name: 'Himanshu',
-    imageSrc: '/images/team/Himanshu.jpg',
+    name: 'Praveen Sharma',
+    imageSrc: '/images/team/Pravin.jpg',
+    position: 'Senior Video Editor',
     twitter: '',
     instagram: '',
     linkedin: '',
@@ -122,6 +125,15 @@ const OUR_TEAM = [
   {
     name: 'Parth Shetye',
     imageSrc: '/images/team/Parth.png',
+    position: '',
+    twitter: '',
+    instagram: '',
+    linkedin: '',
+  },
+  {
+    name: 'Himanshu',
+    imageSrc: '/images/team/Himanshu.jpg',
+    position: '',
     twitter: '',
     instagram: '',
     linkedin: '',
