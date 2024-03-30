@@ -15,7 +15,7 @@ const FoundersCard: FC<FounderCardProps> = ({
   description,
 }) => {
   return (
-    <div className='w-full rounded-br-[5rem] rounded-tl-[5rem] border bg-[#38383a] bg-opacity-10 p-6 shadow-xl backdrop-blur-lg'>
+    <div className='w-full rounded-br-[5rem] rounded-tl-[5rem] border bg-[#81aae7] bg-opacity-30 p-6 shadow-xl backdrop-blur-lg'>
       <div className='flex items-center md:flex-row'>
         <div className='relative h-28 w-28 flex-shrink-0 md:h-56 md:w-56'>
           <Image
@@ -38,7 +38,7 @@ const FoundersCard: FC<FounderCardProps> = ({
             </p>
           </div>
           <div>
-            <p className='text-gray-700 max-md:line-clamp-4 max-md:text-sm'>
+            <p className='line-clamp-6 text-gray-700 max-md:line-clamp-4 max-md:text-sm'>
               {description}
             </p>
           </div>

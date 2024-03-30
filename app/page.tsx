@@ -3,9 +3,6 @@ import OurClientsSection from '@/components/OurClients';
 import AnimatedTextSection1 from '@/components/TextAnimation/Section1';
 import AnimatedTextSection2 from '@/components/TextAnimation/Section2';
 import VideoPlayer from '@/components/VideoPlayer';
-import { BASE_DOMAIN } from '@/constants';
-import { Suspense } from 'react';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -16,7 +13,7 @@ export default function Home() {
         classNames={{ root: 'object-fill' }}
         restVideoTags={{ autoPlay: true, preload: 'auto', muted: true }}
       />
-      <div className='mt-12 flex w-full flex-col items-start justify-start gap-y-16 md:mt-36 md:gap-y-36 2xl:px-52'>
+      <div className='mt-12 flex w-full flex-col items-start justify-start gap-y-16 md:mt-36 md:gap-y-36 xl:px-36 2xl:px-52'>
         <AnimatedTextSection1 />
         <OurClientsSection />
         <AnimatedTextSection2 />

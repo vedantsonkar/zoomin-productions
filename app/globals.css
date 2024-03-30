@@ -25,7 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
   overflow-x: hidden;
-  @apply font-poppins bg-white;
+  @apply bg-white font-poppins;
 }
 
 @layer utilities {
@@ -103,7 +103,7 @@ body {
 }
 
 .heading {
-  @apply font-cedarville_cursive text-center text-[1.8rem] font-bold lg:text-[2.4rem] xl:text-[3rem];
+  @apply text-center font-cedarville_cursive text-[2rem] font-bold lg:text-[2.6rem] xl:text-[3.2rem];
 }
 
 .polygon-div {

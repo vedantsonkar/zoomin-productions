@@ -6,7 +6,7 @@ import { NextPage } from 'next';
 
 const OurTeamPage: NextPage = () => {
   return (
-    <div className='mb-16 justify-start space-y-16 pt-8 md:mb-36 md:space-y-36 md:px-24 2xl:px-52'>
+    <div className='mb-16 justify-start space-y-16 pt-8 md:mb-36 md:space-y-36 md:px-24 xl:px-36 2xl:px-52'>
       <h1 className='sr-only'>Zoomin Team</h1>
       <div className='max-md:px-1'>
         <FoundersSection />
