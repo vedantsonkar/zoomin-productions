@@ -15,7 +15,7 @@ const YOUTUBE_VIDEOS = [
     thumbnail: '/videos/thumbnails/Video_3.png',
   },
   {
-    name: 'G20 Highlights',
+    name: 'G20 2nd EdWG',
     url: 'https://www.youtube.com/embed/U0FjwcImOoQ?si=MzwRTw7mryznQFH6',
     thumbnail: '/videos/thumbnails/Video_4.png',
   },
@@ -35,7 +35,7 @@ const YOUTUBE_VIDEOS = [
     thumbnail: '/videos/thumbnails/Video_7.png',
   },
   {
-    name: 'G20 3rd EdWG',
+    name: 'Study in India',
     url: 'https://www.youtube.com/embed/bwnz0FiyM7Q?si=cF9Ufc2NKVQWEH2k',
     thumbnail: '/videos/thumbnails/Video_8.png',
   },
@@ -50,7 +50,7 @@ const YOUTUBE_VIDEOS = [
     thumbnail: '/videos/thumbnails/Video_10.png',
   },
   {
-    name: 'NEP 2020 EVENT FILM',
+    name: 'NEP 2020  FILM',
     url: 'https://www.youtube.com/embed/JmDQ9wihoN8?si=c0mgcL7PC9MBco-x',
     thumbnail: '/videos/thumbnails/Video_11.png',
   },
@@ -101,7 +101,7 @@ const OUR_TEAM = [
   {
     name: 'Swaraj Shetty',
     imageSrc: '/images/team/Swaraj.jpg',
-    position: 'Senior Video Editor',
+    position: 'Sr. Consultant | Digital Strategy and Outreach',
     twitter: '',
     instagram: '',
     linkedin: '',
@@ -109,7 +109,7 @@ const OUR_TEAM = [
   {
     name: 'Mithila Naik-Satam',
     imageSrc: '/images/team/Mithila.jpg',
-    position: 'Senior Video Editor',
+    position: 'Consultant | Content and Strategy',
     twitter: '',
     instagram: '',
     linkedin: '',
@@ -125,7 +125,7 @@ const OUR_TEAM = [
   {
     name: 'Parth Shetye',
     imageSrc: '/images/team/Parth.png',
-    position: 'Senior Video Editor',
+    position: 'Junior Producer',
     twitter: '',
     instagram: '',
     linkedin: '',
@@ -133,7 +133,7 @@ const OUR_TEAM = [
   {
     name: 'Himanshu',
     imageSrc: '/images/team/Himanshu.jpg',
-    position: 'Senior Video Editor',
+    position: 'Junior Editor',
     twitter: '',
     instagram: '',
     linkedin: '',

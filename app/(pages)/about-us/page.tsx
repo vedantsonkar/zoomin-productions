@@ -11,12 +11,12 @@ const AboutUsPage: NextPage = () => {
         <h1 className='px-8 text-center text-4xl font-bold text-white md:text-[3rem]'>
           About Us
         </h1>
-        <h2 className='px-8 text-center font-cedarville_cursive text-4xl font-bold text-white md:text-[3rem]'>
+        <h2 className='font-cedarville_cursive px-8 text-center text-4xl font-bold text-white md:text-[3rem]'>
           Want a zoomin solution to your content production problems ?
         </h2>
       </div>
 
-      <div className='mb-16 space-y-16 md:mb-36 md:space-y-36 2xl:px-52'>
+      <div className='mb-16 space-y-16 md:mb-36 md:space-y-36 2xl:px-32'>
         <AboutUsSection />
         <FeaturedFilms title='Our Projects' />
         <PortfolioSection />
