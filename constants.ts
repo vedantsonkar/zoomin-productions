@@ -1,11 +1,11 @@
 const YOUTUBE_VIDEOS = [
   {
-    name: 'KTS Showcase',
+    name: 'KTS II',
     url: 'https://www.youtube.com/embed/0ymewY9S8r4?si=4U-Bor9k8mxrghif',
     thumbnail: '/videos/thumbnails/Video_1.png',
   },
   {
-    name: 'KTS Main Event',
+    name: 'KTS 1',
     url: 'https://www.youtube.com/embed/1wr6u-FbG_c?si=TjTxaXreg3wtMOsi',
     thumbnail: '/videos/thumbnails/Video_2.png',
   },
@@ -25,17 +25,17 @@ const YOUTUBE_VIDEOS = [
     thumbnail: '/videos/thumbnails/Video_5.png',
   },
   {
-    name: 'CBC Event Films',
+    name: 'National Training Conclave 2023',
     url: 'https://www.youtube.com/embed/buuaRqqrcHI?si=fBqcKnrzwdRdcUZE',
     thumbnail: '/videos/thumbnails/Video_6.png',
   },
   {
-    name: 'NTA AWARDS FILMS',
+    name: 'National Teachers Awards 2023',
     url: 'https://www.youtube.com/embed/15E0Y9iJH5A?si=Q5a4zt2EfVivd3sb',
     thumbnail: '/videos/thumbnails/Video_7.png',
   },
   {
-    name: 'STUDY IN INDIA PORTAL FILM',
+    name: 'G20 3rd EdWG',
     url: 'https://www.youtube.com/embed/bwnz0FiyM7Q?si=cF9Ufc2NKVQWEH2k',
     thumbnail: '/videos/thumbnails/Video_8.png',
   },
