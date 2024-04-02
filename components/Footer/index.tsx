@@ -26,7 +26,11 @@ export default function Footer() {
               className='object-contain'
             />
           </Link>
-          <Link href='/' className={socialLogoClass}>
+          <Link
+            href='https://www.youtube.com/@zoominproduction5626'
+            target='_blank'
+            className={socialLogoClass}
+          >
             <Image
               src='/images/global/social_logo/icon-youtube.svg'
               alt='YouTube'
@@ -35,7 +39,11 @@ export default function Footer() {
               className='object-contain'
             />
           </Link>
-          <Link href='/' className={socialLogoClass}>
+          <Link
+            href='https://www.instagram.com/zoom_inproductions'
+            target='_blank'
+            className={socialLogoClass}
+          >
             <Image
               src='/images/global/social_logo/icon-instagram.svg'
               alt='Instagram'
