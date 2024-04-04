@@ -74,6 +74,11 @@ const YOUTUBE_VIDEOS = [
     url: 'https://www.youtube.com/embed/xW829mJsXu4?si=bfQPw-1wKqApV807',
     thumbnail: '/videos/thumbnails/Video_15.png',
   },
+  {
+    name: 'Exam Warriors',
+    url: 'https://www.youtube.com/embed/s6T-G7HFgc8?si=ecimDshGiaW9SXi_',
+    thumbnail: '/videos/thumbnails/Video_16.png',
+  },
 ];
 
 const LINKS = {
