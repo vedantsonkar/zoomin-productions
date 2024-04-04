@@ -64,8 +64,18 @@ export default function Footer() {
           <Link href='/our-projects'>Our Projects</Link>
         </div>
         <div className='flex flex-col space-y-3 '>
-          <Link href='/contact-us'>Careers</Link>
-          <Link href='/contact-us'>Contact Us</Link>
+          <Link
+            href='https://docs.google.com/forms/d/e/1FAIpQLSc9qSGhxIse7YhaTr7HiakCXbcYHKyL2Uns30R9NGzVWIzZvA/viewform?usp=sf_link
+'
+          >
+            Careers
+          </Link>
+          <Link
+            href='https://docs.google.com/forms/d/e/1FAIpQLSc9qSGhxIse7YhaTr7HiakCXbcYHKyL2Uns30R9NGzVWIzZvA/viewform?usp=sf_link
+'
+          >
+            Contact Us
+          </Link>
           <Link href='/privacy-policy'>Privacy Policy</Link>
         </div>
       </div>

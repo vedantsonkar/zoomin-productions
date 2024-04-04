@@ -31,9 +31,10 @@ const PortfolioSection: FC = () => {
         variants={variantsBottomLeft}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <Link href='/our-team' className='hover:underline'>
-          <h3 className='heading'>Our Team</h3>
-        </Link>
+        <h3 className='heading mx-auto w-max hover:underline'>
+          <Link href='/our-team'>Our Team </Link>
+        </h3>
+
         <p className='mb-12 px-14 text-center text-lg sm:px-20 md:px-56'>
           Our dynamic team is a collective force of creativity and expertise,
           specializing in the realms of video production and content generation.

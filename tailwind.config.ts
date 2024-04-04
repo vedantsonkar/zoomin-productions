@@ -20,7 +20,8 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ['var(--font-poppins)'],
-        cedarville_cursive: ['var(--font-cedarville_cursive)'],
+        gilroy: ['Gilroy'],
+        futura: ['Futura'],
       },
     },
   },

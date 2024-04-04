@@ -84,15 +84,13 @@ const FOUNDERS = [
   {
     name: 'Dhawal Velani',
     position: 'Founder',
-    description:
-      'A decade of distinguished experience in government, political parties, and brand communication, Dhawal is a seasoned communications professional.',
+    description: `Communication Specialist | 360 Campaign Management A decade of distinguished experience in government, political parties, and brand communication, Dhawal is a seasoned communications professional. His expertise spans content creation, video production, and strategic marketing ecosystems. He played a pivotal role in orchestrating successful campaigns for the 2014 and 2019 General Elections, showcasing strategic prowess in navigating intricate political landscapes. His versatility extends to effective campaign management in Maharashtra and Jammu & Kashmir, reflecting a keen understanding of diverse socio-political contexts.`,
     image: '/images/team/Dhawal.jpg',
   },
   {
     name: 'Ajay Raj Dinkar',
     position: 'Co-Founder',
-    description:
-      'A decade of mastery in visual storytelling, transforming each frame into a canvas - from pixel to perfection, building ideas into compelling narratives, bringing stories to life with an exquisite blend of visuals and sound.',
+    description: `Ajay, with over a decade of mastery in visual storytelling, transforming each frame into a canvas -- from pixel to perfection, building ideas into compelling narratives, bringing stories to life with an exquisite blend of visuals and sound. From conceptualization to post-production mastery, Ajay has been the driving force behind distinguished projects, leaving an indelible mark on endeavours like the prestigious Pradhanmantri Sangrahalaya and the dynamic Dubai Expo. His creative fingerprint extends to industry titans such as Coca-Cola India, Maruti Suzuki India, Realme India, and leading TV channels like MTV, UTV, and Ten Sports.`,
     image: '/images/team/Ajay.jpg',
   },
 ];

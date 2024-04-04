@@ -29,7 +29,7 @@ const FoundersSection: FC = () => {
 
   return (
     <div ref={ref} className='max-md:px-2'>
-      <div className='my-20 grid w-full place-items-center items-center gap-6 lg:grid-cols-2'>
+      <div className='mx-auto my-20 flex w-full flex-col items-center justify-center gap-6'>
         <motion.div
           variants={variantsLeft}
           initial='hidden'
@@ -54,6 +54,7 @@ const FoundersSection: FC = () => {
             position={FOUNDERS[1].position}
             image={FOUNDERS[1].image}
             description={FOUNDERS[1].description}
+            reverse
           />
         </motion.div>
       </div>

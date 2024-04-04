@@ -34,7 +34,7 @@ const AnimatedTextSection1: React.FC = () => {
   return (
     <div
       ref={ref}
-      className='flex w-full flex-col items-start justify-center gap-x-10 gap-y-10 px-8 md:flex-row md:px-24'
+      className='flex w-full flex-col items-center justify-center gap-x-10 gap-y-10 px-8 md:flex-row md:px-24'
     >
       <motion.div
         variants={variantsLeft}
@@ -44,11 +44,11 @@ const AnimatedTextSection1: React.FC = () => {
         className='relative h-[34rem] w-full md:w-24 md:basis-1/2'
       >
         <Image
-          src='/images/global/Production_House_Vector.jpg'
+          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgnZX21Aulk9jbN2yHauK2GIPTLCvLDDf0Ink5uSbpl_IHwRLWFXIW2rM&s=10'
           alt='Production House'
           fill
-          sizes='(max-width: 768px) 100vw, 40vw'
-          className='rounded-md object-cover'
+          sizes='(max-width: 768px) 100vw, 80vw'
+          className='rounded-md rounded-l-full object-cover'
         />
       </motion.div>
       <div className='flex flex-col gap-y-6 md:basis-1/2 md:gap-y-10'>

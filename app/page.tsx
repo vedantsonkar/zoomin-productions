@@ -1,7 +1,7 @@
 import FeaturedFilms from '@/components/FeaturedSection';
 import OurClientsSection from '@/components/OurClients';
 import AnimatedTextSection1 from '@/components/TextAnimation/Section1';
-import AnimatedTextSection2 from '@/components/TextAnimation/Section2';
+// import AnimatedTextSection2 from '@/components/TextAnimation/Section2';
 import VideoPlayer from '@/components/VideoPlayer';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <div className='mt-12 flex w-full flex-col items-start justify-start gap-y-16 md:mt-36 md:gap-y-36 xl:px-36 2xl:px-32'>
         <AnimatedTextSection1 />
         <OurClientsSection />
-        <AnimatedTextSection2 />
+        {/* <AnimatedTextSection2 /> */}
         <FeaturedFilms />
       </div>
     </main>

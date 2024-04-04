@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins, Cedarville_Cursive } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -12,13 +12,6 @@ const poppins = Poppins({
   weight: '500',
   subsets: ['latin'],
   variable: '--font-poppins',
-});
-
-const cedarville_cursive = Cedarville_Cursive({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '400',
-  variable: '--font-cedarville_cursive',
 });
 
 export const metadata: Metadata = {
@@ -55,7 +48,7 @@ export default function RootLayout({
           src='https://platform.twitter.com/widgets.js'
         /> */}
       </head>
-      <body className={`${poppins.variable} ${cedarville_cursive.variable}`}>
+      <body className={`${poppins.variable}`}>
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-M379LVK3'
