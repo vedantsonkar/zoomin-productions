@@ -119,7 +119,7 @@ body {
 }
 
 .heading {
-  @apply font-futura text-center text-[2rem] font-normal uppercase tracking-wider text-[#a0383f] decoration-[#a0383f] lg:text-[2.6rem] xl:text-[4.375rem];
+  @apply font-futura text-center text-[2rem] font-normal uppercase tracking-wider text-[#a0383f] decoration-[#a0383f] lg:text-[2.6rem] xl:text-[3rem] 2xl:text-[3.5rem] min-[1800px]:text-[4.375rem];
 }
 
 .polygon-div {

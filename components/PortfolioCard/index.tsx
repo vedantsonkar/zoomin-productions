@@ -33,7 +33,9 @@ const PortfolioCard: FC<PortfolioCardProps> = ({
 
       <h3 className='text-xl font-semibold'>{name}</h3>
       {position && (
-        <p className='text-sm opacity-50 2xl:max-w-[30%]'>{position}</p>
+        <p className='text-sm opacity-50 2xl:max-w-[50%] min-[1800px]:max-w-[30%]'>
+          {position}
+        </p>
       )}
     </div>
   );

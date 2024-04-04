@@ -48,7 +48,7 @@ const AnimatedTextSection1: React.FC = () => {
           alt='Production House'
           fill
           sizes='(max-width: 768px) 100vw, 80vw'
-          className='rounded-md rounded-l-full object-cover'
+          className='rounded-md object-contain'
         />
       </motion.div>
       <div className='flex flex-col gap-y-6 md:basis-1/2 md:gap-y-10'>
@@ -57,7 +57,7 @@ const AnimatedTextSection1: React.FC = () => {
           initial='hidden'
           animate={controls}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='text-2xl font-bold text-black md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.5rem]'
+          className='text-2xl font-bold text-black md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2rem] min-[1800px]:text-[2.5rem]'
         >
           A fully integrated production company and a leader in all forms of
           content creation, entertainment and related businesses
@@ -68,7 +68,7 @@ const AnimatedTextSection1: React.FC = () => {
           initial='hidden'
           animate={controls}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className='text-lg font-semibold text-black md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.5rem] 2xl:text-[1.8rem]'
+          className='text-lg font-semibold text-black md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.5rem] 2xl:text-[1.5rem] min-[1800px]:text-[1.8rem]'
         >
           <span className='bg-gradient-to-r from-orange-700 via-yellow-600 via-50% to-green-600 bg-clip-text text-transparent'>
             ZoomIn Productions{' '}

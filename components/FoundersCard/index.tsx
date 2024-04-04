@@ -41,17 +41,17 @@ const FoundersCard: FC<FounderCardProps> = ({
           )}
         >
           <div>
-            <h2 className='font-futura mb-1 text-xl font-bold tracking-wider text-gray-800 lg:text-4xl 2xl:text-6xl'>
+            <h2 className='font-futura mb-1 text-xl font-bold tracking-wider text-gray-800 lg:text-4xl 2xl:text-5xl min-[1800px]:text-6xl'>
               {name}
             </h2>
           </div>
           <div>
-            <p className='text-md mb-1 font-sans font-semibold text-gray-600 underline lg:text-xl 2xl:text-3xl'>
+            <p className='text-md mb-1 font-sans font-semibold text-gray-600 underline lg:text-xl 2xl:text-2xl min-[1800px]:text-3xl'>
               {position}
             </p>
           </div>
           <div>
-            <p className='text-sm text-gray-700 lg:text-base 2xl:text-lg'>
+            <p className='2xl:text-md text-sm text-gray-700 lg:text-base min-[1800px]:text-lg'>
               {description}
             </p>
           </div>

@@ -23,7 +23,7 @@ const VideoCard: FC<VideoCardProps> = ({ name, imageSrc, videoUrl }) => {
   return (
     <>
       <button
-        className='group relative mx-auto flex aspect-square h-full max-h-52 w-full max-w-52 cursor-pointer items-center justify-center rounded-md bg-white shadow-lg md:max-h-72 md:max-w-72'
+        className='group relative mx-auto flex aspect-square h-full max-h-52 w-full max-w-52 cursor-pointer items-center justify-center rounded-md bg-white shadow-lg xl:max-h-60 xl:max-w-60 min-[1800px]:max-h-72 min-[1800px]:max-w-72'
         onClick={handleModalOpen}
       >
         <Image
