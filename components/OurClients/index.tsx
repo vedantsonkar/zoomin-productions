@@ -48,7 +48,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className='grid grid-cols-4 place-items-center gap-10 px-10 md:grid-cols-3 md:px-24'
+        className='grid grid-cols-2 place-items-center gap-10 px-10 md:grid-cols-3 md:px-24'
       >
         <Image
           src={G2}

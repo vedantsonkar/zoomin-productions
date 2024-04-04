@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../public/fonts/Gilroy_Regular.woff);
+  }
+  @font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../public/fonts/Futura_Heavy.otf);
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -103,7 +119,7 @@ body {
 }
 
 .heading {
-  @apply text-center font-cedarville_cursive text-[2rem] font-bold lg:text-[2.6rem] xl:text-[3.2rem];
+  @apply font-futura text-center text-[2rem] font-normal uppercase tracking-wider text-[#a0383f] decoration-[#a0383f] lg:text-[2.6rem] xl:text-[4.375rem];
 }
 
 .polygon-div {

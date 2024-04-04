@@ -10,7 +10,7 @@ const OurTeamPage: NextPage = () => {
       <AboutUsSection />
       <OurClientsSection heading='Organizations that trust us' />
       <h1 className='heading my-10'>Our Projects</h1>
-      <div className='grid grid-cols-2 gap-6 md:grid-cols-4 md:px-20'>
+      <div className='grid grid-cols-2 gap-6 px-6 md:grid-cols-4 md:px-20'>
         {YOUTUBE_VIDEOS.map((item, index) => (
           <div key={index}>
             <VideoCard

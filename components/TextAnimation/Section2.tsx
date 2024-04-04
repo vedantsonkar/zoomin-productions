@@ -86,7 +86,8 @@ const AnimatedTextSection2: React.FC = () => {
       >
         <span>
           <a
-            href='/contact-us'
+            href='https://docs.google.com/forms/d/e/1FAIpQLSc9qSGhxIse7YhaTr7HiakCXbcYHKyL2Uns30R9NGzVWIzZvA/viewform?usp=sf_link
+'
             className='inline-block text-[#A0383F] underline'
           >
             Contact us

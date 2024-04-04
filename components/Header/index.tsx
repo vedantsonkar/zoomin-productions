@@ -60,7 +60,8 @@ const Header: React.FC = () => {
             Our Projects
           </Link>
           <Link
-            href='/contact-us'
+            href='https://docs.google.com/forms/d/e/1FAIpQLSc9qSGhxIse7YhaTr7HiakCXbcYHKyL2Uns30R9NGzVWIzZvA/viewform?usp=sf_link
+'
             className='bg-black bg-clip-text text-transparent transition-colors hover:bg-[#A0383F]'
             aria-label='Contact Us'
           >
