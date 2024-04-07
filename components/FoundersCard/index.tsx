@@ -29,7 +29,7 @@ const FoundersCard: FC<FounderCardProps> = ({
           <Image
             src={image}
             alt='Profile Image'
-            className='object-cover grayscale transition-all duration-300 hover:scale-105 hover:grayscale-0'
+            className='object-cover transition-all duration-300 hover:scale-105 md:grayscale md:hover:grayscale-0'
             sizes='90vw'
             fill
           />
@@ -41,7 +41,7 @@ const FoundersCard: FC<FounderCardProps> = ({
           )}
         >
           <div>
-            <h2 className='font-futura mb-1 text-xl font-bold tracking-wider text-gray-800 lg:text-4xl 2xl:text-5xl min-[1800px]:text-6xl'>
+            <h2 className='mb-1 font-futura text-xl font-bold tracking-wider text-gray-800 lg:text-4xl 2xl:text-5xl min-[1800px]:text-6xl'>
               {name}
             </h2>
           </div>

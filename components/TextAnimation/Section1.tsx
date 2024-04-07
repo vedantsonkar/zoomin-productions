@@ -44,10 +44,10 @@ const AnimatedTextSection1: React.FC = () => {
         className='relative h-[34rem] w-full md:w-24 md:basis-1/2'
       >
         <Image
-          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgnZX21Aulk9jbN2yHauK2GIPTLCvLDDf0Ink5uSbpl_IHwRLWFXIW2rM&s=10'
+          src='/images/global/Homepage_Image.png'
           alt='Production House'
           fill
-          sizes='(max-width: 768px) 100vw, 80vw'
+          sizes='100vw'
           className='rounded-md object-contain'
         />
       </motion.div>

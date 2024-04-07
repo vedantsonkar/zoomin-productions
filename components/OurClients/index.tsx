@@ -50,78 +50,97 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
         transition={{ duration: 0.6, delay: 0.6 }}
         className='grid grid-cols-2 place-items-center gap-10 px-10 md:grid-cols-3 md:px-24'
       >
-        <Image
-          src={G2}
-          alt='G2'
-          title='G20'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={Bill_Gates_Foundation}
-          alt='Bill_Gates_Foundation'
-          title='Bill & Melinda Gates Foundation'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={WB}
-          alt='World_Bank'
-          title='World Bank'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={Capacity_Building_Commission}
-          alt='Capacity_Building_Commission'
-          title='Capacity Building Commission'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={Animal_Husbandry}
-          alt='Animal_Husbandry'
-          title='Animal Husbandry'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={Delhi_Police}
-          alt='Delhi_Police'
-          title='Delhi Police'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={Ministry_of_Education}
-          alt='Ministry_of_Education'
-          title='Ministry of Education'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={Ministry_of_Fisheries}
-          alt='Ministry_of_Fisheries_Animal_Husbandry_and_Dairying'
-          title='Ministry of Fisheries Animal Husbandry and Dairying'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
-        <Image
-          src={Ministry_of_Wnd}
-          alt='Ministry_of_Women_and_Child_Development'
-          title='Ministry of Women and Child Development'
-          width={150}
-          height={150}
-          sizes='33vw'
-        />
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={G2}
+            alt='G2'
+            title='G20'
+            fill
+            sizes='90vw'
+            className='object-contain'
+          />
+        </div>
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={Bill_Gates_Foundation}
+            alt='Bill_Gates_Foundation'
+            title='Bill & Melinda Gates Foundation'
+            fill
+            sizes='90vw'
+            className='object-contain'
+          />
+        </div>
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={WB}
+            alt='World_Bank'
+            title='World Bank'
+            fill
+            sizes='90vw'
+            className='object-contain'
+          />
+        </div>
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={Capacity_Building_Commission}
+            alt='Capacity_Building_Commission'
+            title='Capacity Building Commission'
+            fill
+            sizes='90vw'
+            className='object-contain'
+          />
+        </div>
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={Animal_Husbandry}
+            alt='Animal_Husbandry'
+            title='Animal Husbandry'
+            fill
+            sizes='90vw'
+            className='object-contain'
+          />
+        </div>
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={Delhi_Police}
+            alt='Delhi_Police'
+            title='Delhi Police'
+            fill
+            sizes='90vw'
+            className='object-contain'
+          />
+        </div>
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={Ministry_of_Education}
+            alt='Ministry_of_Education'
+            title='Ministry of Education'
+            fill
+            sizes='90vw'
+            className='object-contain'
+          />
+        </div>
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={Ministry_of_Fisheries}
+            alt='Ministry_of_Fisheries_Animal_Husbandry_and_Dairying'
+            title='Ministry of Fisheries Animal Husbandry and Dairying'
+            fill
+            sizes='90vw'
+            className='object-cover'
+          />
+        </div>
+
+        <div className='relative aspect-square h-full w-full max-w-36'>
+          <Image
+            src={Ministry_of_Wnd}
+            alt='Ministry_of_Women_and_Child_Development'
+            title='Ministry of Women and Child Development'
+            fill
+            sizes='90vw'
+            className='object-cover'
+          />
+        </div>
       </motion.div>
       {/* <motion.div
         variants={variantsBottom}
