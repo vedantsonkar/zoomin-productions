@@ -34,19 +34,19 @@ const AnimatedTextSection1: React.FC = () => {
   return (
     <div
       ref={ref}
-      className='flex w-full flex-col items-center justify-center gap-x-10 gap-y-10 px-8 md:flex-row md:px-24'
+      className='flex w-full flex-col items-center justify-center gap-x-10 gap-y-10 px-8 md:px-24 lg:flex-row'
     >
       <motion.div
         variants={variantsLeft}
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className='relative h-[34rem] w-full md:w-24 md:basis-1/2'
       >
         <Image
           src='/images/global/Homepage_Image.png'
           alt='Production House'
-          fill
+          width={1000}
+          height={1000}
           sizes='100vw'
           className='rounded-md object-contain'
         />
