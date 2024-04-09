@@ -40,7 +40,7 @@ const FeaturedFilms: FC<FeaturedFilmsProps> = ({
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <h3 className='heading mx-auto w-max hover:underline'>
+        <h3 className='heading hover:underline'>
           <Link href='/our-projects'>{title} </Link>
         </h3>
 
