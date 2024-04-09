@@ -47,7 +47,7 @@ const AnimatedTextSection1: React.FC = () => {
           alt='Production House'
           width={1000}
           height={1000}
-          sizes='100vw'
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           className='rounded-md object-contain'
         />
       </motion.div>

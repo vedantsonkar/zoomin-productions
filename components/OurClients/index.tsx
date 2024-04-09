@@ -56,7 +56,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='G2'
             title='G20'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-contain'
           />
         </div>
@@ -66,7 +66,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='Bill_Gates_Foundation'
             title='Bill & Melinda Gates Foundation'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-contain'
           />
         </div>
@@ -76,7 +76,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='World_Bank'
             title='World Bank'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-contain'
           />
         </div>
@@ -86,7 +86,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='Capacity_Building_Commission'
             title='Capacity Building Commission'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-contain'
           />
         </div>
@@ -96,7 +96,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='Animal_Husbandry'
             title='Animal Husbandry'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-contain'
           />
         </div>
@@ -106,7 +106,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='Delhi_Police'
             title='Delhi Police'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-contain'
           />
         </div>
@@ -116,7 +116,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='Ministry_of_Education'
             title='Ministry of Education'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-contain'
           />
         </div>
@@ -126,7 +126,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='Ministry_of_Fisheries_Animal_Husbandry_and_Dairying'
             title='Ministry of Fisheries Animal Husbandry and Dairying'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-cover'
           />
         </div>
@@ -137,7 +137,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
             alt='Ministry_of_Women_and_Child_Development'
             title='Ministry of Women and Child Development'
             fill
-            sizes='90vw'
+            sizes='(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw'
             className='object-cover'
           />
         </div>
