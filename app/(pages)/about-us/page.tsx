@@ -12,7 +12,7 @@ const AboutUsPage: NextPage = () => {
           Want a zoomin solution to your content production problems ?
         </h1>
         <h2 className='font-cedarville_cursive px-8 text-center text-4xl font-bold text-[#cb9d06] md:text-[3rem]'>
-          Then, you're at the right place!
+          Then you&apos;re at the right place!
         </h2>
       </div>
 
