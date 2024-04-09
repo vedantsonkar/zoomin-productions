@@ -41,7 +41,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
   }, [controls, inView]);
 
   return (
-    <div className='flex w-full flex-col gap-y-24' ref={ref}>
+    <div className='flex w-full flex-col gap-y-10 md:gap-y-24' ref={ref}>
       <h3 className='heading'>{heading}</h3>
       <motion.div
         variants={variantsBottom}
@@ -131,7 +131,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           />
         </div>
 
-        <div className='relative aspect-square h-full w-full max-w-36'>
+        <div className='relative aspect-square h-full w-full max-w-36 max-md:col-span-2'>
           <Image
             src={Ministry_of_Wnd}
             alt='Ministry_of_Women_and_Child_Development'
