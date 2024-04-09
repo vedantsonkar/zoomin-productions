@@ -7,6 +7,8 @@ import Script from 'next/script';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BASE_DOMAIN } from '@/constants';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   weight: '500',
@@ -66,6 +68,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
