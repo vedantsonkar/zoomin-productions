@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   description:
     'We at ZoomIn are a creative powerhouse. We embrace challenges and adapt to your needs. We strategize and innovate. We create bespoke content that empowers brands, amplifies digital presence, and enriches your brand value.',
   metadataBase: new URL(BASE_DOMAIN),
+  robots: 'index, follow',
   alternates: {
     canonical: '/',
   },
