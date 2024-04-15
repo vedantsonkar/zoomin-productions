@@ -1,11 +1,13 @@
 import { FC } from 'react';
 import Image from 'next/image';
+import { twMerge } from 'tailwind-merge';
 
 type FounderCardProps = {
   image: string;
   name: string;
   position: string;
   description?: string;
+  reverse?: boolean;
 };
 
 const FoundersCard: FC<FounderCardProps> = ({
@@ -13,32 +15,43 @@ const FoundersCard: FC<FounderCardProps> = ({
   name,
   position,
   description,
+  reverse = false,
 }) => {
   return (
-    <div className='w-full rounded-br-[5rem] rounded-tl-[5rem] border bg-[#81aae7] bg-opacity-30 p-6 shadow-xl backdrop-blur-lg'>
-      <div className='flex items-center md:flex-row'>
-        <div className='relative h-28 w-28 flex-shrink-0 md:h-56 md:w-56'>
+    <div className='w-full p-6'>
+      <div
+        className={twMerge(
+          'flex flex-col items-center gap-y-6 md:flex-row xl:gap-x-10',
+          reverse && 'md:flex-row-reverse',
+        )}
+      >
+        <div className='relative h-[20rem] w-[20rem] flex-shrink-0 shadow-xl transition-all duration-300 hover:shadow-2xl sm:h-[30rem] sm:w-[30rem]'>
           <Image
             src={image}
             alt='Profile Image'
-            className='rounded-full object-cover'
-            sizes='33vw'
+            className='object-cover transition-all duration-300 hover:scale-105 md:grayscale md:hover:grayscale-0'
+            sizes='90vw'
             fill
           />
         </div>
-        <div className='ml-4 flex flex-col'>
+        <div
+          className={twMerge(
+            'flex max-w-[30rem] flex-col gap-y-2 max-sm:max-w-[20rem] sm:ml-4 md:gap-y-4 md:px-4 2xl:max-w-[30vw]',
+            reverse && 'md:text-right',
+          )}
+        >
           <div>
-            <h2 className='mb-1 text-xl font-bold text-gray-800 md:text-2xl'>
+            <h2 className='mb-1 font-futura text-xl font-bold tracking-wider text-gray-800 lg:text-4xl 2xl:text-5xl min-[1800px]:text-6xl'>
               {name}
             </h2>
           </div>
           <div>
-            <p className='text-md mb-1 font-sans font-semibold text-gray-600'>
+            <p className='text-md mb-1 font-sans font-semibold text-gray-600 underline lg:text-xl 2xl:text-2xl min-[1800px]:text-3xl'>
               {position}
             </p>
           </div>
           <div>
-            <p className='line-clamp-6 text-gray-700 max-md:line-clamp-4 max-md:text-sm'>
+            <p className='2xl:text-md text-sm text-gray-700 lg:text-base min-[1800px]:text-lg'>
               {description}
             </p>
           </div>

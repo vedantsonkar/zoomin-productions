@@ -40,10 +40,11 @@ const FeaturedFilms: FC<FeaturedFilmsProps> = ({
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <Link href='/our-projects' className='hover:underline'>
-          <h3 className='heading'>{title}</h3>
-        </Link>
-        <p className='mb-10 text-center text-lg max-md:px-12'>
+        <h3 className='heading hover:underline'>
+          <Link href='/our-projects'>{title} </Link>
+        </h3>
+
+        <p className='mb-10 text-center text-lg max-md:px-12 2xl:text-xl'>
           This is a curated collection of some of our best work!
         </p>
         <div className='block w-full'>
@@ -81,7 +82,7 @@ const FeaturedFilms: FC<FeaturedFilmsProps> = ({
             }}
           >
             {YOUTUBE_VIDEOS.map((item, index) => (
-              <div className='w-full md:px-2' key={index}>
+              <div className='w-full px-2' key={index}>
                 <VideoCard
                   name={item.name}
                   imageSrc={item.thumbnail}

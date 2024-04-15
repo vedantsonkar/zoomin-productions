@@ -8,7 +8,7 @@ type MenuProps = {
 
 const Menu: FC<MenuProps> = ({ closeMenu }) => {
   const lClass =
-    'text-transparent transition-colors bg-black focus:bg-gradient-to-r bg-clip-text from-[#ff9595] via-[#81da6f] to-[#49dfd2]';
+    'text-transparent transition-colors bg-black focus:bg-[#A0383F] bg-clip-text from-[#ff9595] via-[#81da6f] to-[#49dfd2]';
   const router = useRouter();
 
   const onClick = (url: string) => {

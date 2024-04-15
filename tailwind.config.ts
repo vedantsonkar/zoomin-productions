@@ -1,3 +1,4 @@
+import { Cedarville_Cursive } from 'next/font/google';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -21,6 +22,8 @@ const config: Config = {
       fontFamily: {
         poppins: ['var(--font-poppins)'],
         cedarville_cursive: ['var(--font-cedarville_cursive)'],
+        gilroy: ['Gilroy'],
+        futura: ['Futura'],
       },
     },
   },
