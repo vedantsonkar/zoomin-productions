@@ -54,72 +54,72 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           src={G2}
           alt='G2'
           title='G20'
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           sizes='33vw'
         />
         <Image
           src={Bill_Gates_Foundation}
           alt='Bill_Gates_Foundation'
           title='Bill & Melinda Gates Foundation'
-          width={150}
-          height={150}
+          width={280}
+          height={280}
           sizes='33vw'
         />
         <Image
           src={WB}
           alt='World_Bank'
           title='World Bank'
-          width={150}
-          height={150}
+          width={250}
+          height={250}
           sizes='33vw'
         />
         <Image
           src={Capacity_Building_Commission}
           alt='Capacity_Building_Commission'
           title='Capacity Building Commission'
-          width={150}
-          height={150}
+          width={300}
+          height={300}
           sizes='33vw'
         />
         <Image
           src={Animal_Husbandry}
           alt='Animal_Husbandry'
           title='Animal Husbandry'
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           sizes='33vw'
         />
         <Image
           src={Delhi_Police}
           alt='Delhi_Police'
           title='Delhi Police'
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           sizes='33vw'
         />
         <Image
           src={Ministry_of_Education}
           alt='Ministry_of_Education'
           title='Ministry of Education'
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           sizes='33vw'
         />
         <Image
           src={Ministry_of_Fisheries}
           alt='Ministry_of_Fisheries_Animal_Husbandry_and_Dairying'
           title='Ministry of Fisheries Animal Husbandry and Dairying'
-          width={150}
-          height={150}
+          width={500}
+          height={500}
           sizes='33vw'
         />
         <Image
           src={Ministry_of_Wnd}
           alt='Ministry_of_Women_and_Child_Development'
           title='Ministry of Women and Child Development'
-          width={150}
-          height={150}
+          width={400}
+          height={400}
           sizes='33vw'
         />
       </motion.div>
