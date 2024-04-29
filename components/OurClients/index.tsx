@@ -41,7 +41,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
   }, [controls, inView]);
 
   return (
-    <div className='flex w-full flex-col gap-y-24' ref={ref}>
+    <div className='flex w-full flex-col gap-y-10 md:gap-y-24' ref={ref}>
       <h3 className='heading'>{heading}</h3>
       <motion.div
         variants={variantsBottom}

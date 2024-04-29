@@ -34,20 +34,20 @@ const AnimatedTextSection1: React.FC = () => {
   return (
     <div
       ref={ref}
-      className='flex w-full flex-col items-center justify-center gap-x-10 gap-y-10 px-8 md:flex-row md:px-24'
+      className='flex w-full flex-col items-center justify-center gap-x-10 gap-y-10 px-4 sm:px-6 md:px-8 lg:flex-row 2xl:px-32 min-[1800px]:px-36'
     >
       <motion.div
         variants={variantsLeft}
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className='relative h-[34rem] w-full md:w-24 md:basis-1/2'
       >
         <Image
-          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgnZX21Aulk9jbN2yHauK2GIPTLCvLDDf0Ink5uSbpl_IHwRLWFXIW2rM&s=10'
+          src='/images/global/Homepage_Image.png'
           alt='Production House'
-          fill
-          sizes='(max-width: 768px) 100vw, 80vw'
+          width={1000}
+          height={1000}
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           className='rounded-md object-contain'
         />
       </motion.div>
@@ -57,7 +57,7 @@ const AnimatedTextSection1: React.FC = () => {
           initial='hidden'
           animate={controls}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='text-2xl font-bold text-black md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2rem] min-[1800px]:text-[2.5rem]'
+          className='text-2xl font-bold text-black md:text-[1.5rem] md:leading-tight lg:text-[1.6rem] 2xl:text-[2rem] min-[1800px]:text-[2.5rem]'
         >
           A fully integrated production company and a leader in all forms of
           content creation, entertainment and related businesses
@@ -68,7 +68,7 @@ const AnimatedTextSection1: React.FC = () => {
           initial='hidden'
           animate={controls}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className='text-lg font-semibold text-black md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.5rem] 2xl:text-[1.5rem] min-[1800px]:text-[1.8rem]'
+          className='text-lg font-semibold text-black md:text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.5rem] min-[1800px]:text-[1.8rem]'
         >
           <span className='bg-gradient-to-r from-orange-700 via-yellow-600 via-50% to-green-600 bg-clip-text text-transparent'>
             ZoomIn Productions{' '}

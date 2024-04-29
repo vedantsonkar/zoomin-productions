@@ -7,12 +7,12 @@ const AboutUsPage: NextPage = () => {
   return (
     <>
       <h1 className='sr-only'>About Us Zoomin Productions</h1>
-      <div className='bg-container flex h-[33rem] flex-col items-center justify-center gap-y-10 md:h-[27rem]'>
+      <div className='flex h-[33rem] flex-col items-center justify-center gap-y-10 bg-black md:h-[27rem]'>
         <h1 className='px-8 text-center text-4xl font-bold text-white md:text-[3rem]'>
-          About Us
-        </h1>
-        <h2 className='font-cedarville_cursive px-8 text-center text-4xl font-bold text-white md:text-[3rem]'>
           Want a zoomin solution to your content production problems ?
+        </h1>
+        <h2 className='font-cedarville_cursive px-8 text-center text-4xl font-bold text-[#cb9d06] md:text-[3rem]'>
+          Then you&apos;re at the right place!
         </h2>
       </div>
 

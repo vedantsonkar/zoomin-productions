@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/privacy-policy/',
   },
+  robots: 'index, follow',
   openGraph: {
     images: ['/images/global/zoomin_logo.png'],
   },

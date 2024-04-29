@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Poppins, Cedarville_Cursive } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -7,6 +7,8 @@ import Script from 'next/script';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BASE_DOMAIN } from '@/constants';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   weight: '500',
@@ -14,11 +16,18 @@ const poppins = Poppins({
   variable: '--font-poppins',
 });
 
+const cedarville = Cedarville_Cursive({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-cedarville_cursive',
+});
+
 export const metadata: Metadata = {
   title: 'ZoomIn Productions',
   description:
     'We at ZoomIn are a creative powerhouse. We embrace challenges and adapt to your needs. We strategize and innovate. We create bespoke content that empowers brands, amplifies digital presence, and enriches your brand value.',
   metadataBase: new URL(BASE_DOMAIN),
+  robots: 'index, follow',
   alternates: {
     canonical: '/',
   },
@@ -48,7 +57,7 @@ export default function RootLayout({
           src='https://platform.twitter.com/widgets.js'
         /> */}
       </head>
-      <body className={`${poppins.variable}`}>
+      <body className={`${poppins.variable} ${cedarville.variable}`}>
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-M379LVK3'
@@ -60,6 +69,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
