@@ -106,14 +106,14 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           height={200}
           sizes='33vw'
         />
-        <Image
+        {/* <Image
           src={Ministry_of_Fisheries}
           alt='Ministry_of_Fisheries_Animal_Husbandry_and_Dairying'
           title='Ministry of Fisheries Animal Husbandry and Dairying'
           width={500}
           height={500}
           sizes='33vw'
-        />
+        /> */}
         <Image
           src={Ministry_of_Wnd}
           alt='Ministry_of_Women_and_Child_Development'
@@ -121,6 +121,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           width={400}
           height={400}
           sizes='33vw'
+          className='max-md:scale-150'
         />
       </motion.div>
       {/* <motion.div
