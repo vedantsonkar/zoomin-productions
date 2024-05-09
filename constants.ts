@@ -119,7 +119,7 @@ const OUR_TEAM = [
   },
   {
     name: 'Praveen Sharma',
-    imageSrc: '/images/team/Pravin.jpeg',
+    imageSrc: '/images/team/Praveen.jpg',
     position: 'Senior Video Editor',
     twitter: '',
     instagram: '',
@@ -128,7 +128,7 @@ const OUR_TEAM = [
   {
     name: 'Parth Shetye',
     imageSrc: '/images/team/Parth.png',
-    position: 'Junior Producer',
+    position: 'Content Producer',
     twitter: '',
     instagram: '',
     linkedin: '',

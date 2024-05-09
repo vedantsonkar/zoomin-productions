@@ -8,12 +8,13 @@ import { useEffect } from 'react';
 import G2 from '@/public/images/clients/G2.webp';
 import Bill_Gates_Foundation from '@/public/images/clients/Bill_Gates_Foundation.webp';
 import Capacity_Building_Commission from '@/public/images/clients/Capacity_Building_Commission.webp';
-import Animal_Husbandry from '@/public/images/clients/Animal_Husbandry.webp';
+import Animal_Husbandry_Fisheries from '@/public/images/clients/Animal_Husbandry_Fisheries.png';
 import Delhi_Police from '@/public/images/clients/Delhi_Police.webp';
 import Ministry_of_Education from '@/public/images/clients/Ministry_of_Education.webp';
 import TweetsCarousel from '../TweetsCarousel';
 import Ministry_of_Fisheries from '@/public/images/clients/Ministry_of_Fisheries.png';
 import Ministry_of_Wnd from '@/public/images/clients/Ministry_of_Wnd.png';
+import Jammu from '@/public/images/clients/Jammu.png';
 import WB from '@/public/images/clients/WB.png';
 
 type OurClientsSectionProps = {
@@ -56,7 +57,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           title='G20'
           width={200}
           height={200}
-          sizes='33vw'
+          sizes='50vw'
         />
         <Image
           src={Bill_Gates_Foundation}
@@ -64,7 +65,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           title='Bill & Melinda Gates Foundation'
           width={280}
           height={280}
-          sizes='33vw'
+          sizes='50vw'
         />
         <Image
           src={WB}
@@ -72,7 +73,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           title='World Bank'
           width={250}
           height={250}
-          sizes='33vw'
+          sizes='50vw'
         />
         <Image
           src={Capacity_Building_Commission}
@@ -80,15 +81,15 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           title='Capacity Building Commission'
           width={300}
           height={300}
-          sizes='33vw'
+          sizes='50vw'
         />
         <Image
-          src={Animal_Husbandry}
+          src={Animal_Husbandry_Fisheries}
           alt='Animal_Husbandry'
           title='Animal Husbandry'
-          width={200}
-          height={200}
-          sizes='33vw'
+          width={300}
+          height={300}
+          sizes='50vw'
         />
         <Image
           src={Delhi_Police}
@@ -96,7 +97,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           title='Delhi Police'
           width={200}
           height={200}
-          sizes='33vw'
+          sizes='50vw'
         />
         <Image
           src={Ministry_of_Education}
@@ -104,7 +105,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           title='Ministry of Education'
           width={200}
           height={200}
-          sizes='33vw'
+          sizes='50vw'
         />
         {/* <Image
           src={Ministry_of_Fisheries}
@@ -122,6 +123,15 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           height={400}
           sizes='33vw'
           className='max-md:scale-150'
+        />
+        <Image
+          src={Jammu}
+          alt='IIT Jammu'
+          title='ITT Jammu'
+          width={200}
+          height={200}
+          sizes='33vw'
+          className='max-md:col-span-full max-md:scale-90'
         />
       </motion.div>
       {/* <motion.div

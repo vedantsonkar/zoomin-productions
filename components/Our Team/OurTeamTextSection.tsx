@@ -47,17 +47,18 @@ const OurTeamTextSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className='text-lg font-medium text-[#000]'
+        className='text-center text-lg font-medium text-[#000]'
       >
-        In the bustling world of video production, Zoomin Productions emerges as
-        a beacon of excellence and innovation. With a team of dedicated
-        professionals, each an expert in their craft, Zoomin Productions excels
-        in generating captivating content and delivering top-tier production
-        services. Their collective skill set encompasses every aspect of the
-        production process, from conceptualization to final delivery, ensuring
-        that every project exceeds expectations.
+        At ZoomIn Productions, our team comprises skilled editors, creative
+        producers, and enthusiastic photographers and videographers, each
+        bringing a unique blend of expertise and passion to the forefront. With
+        a collective commitment to excellence and innovation, our team
+        collaborates seamlessly to deliver dynamic solutions tailored to elevate
+        your brands online presence and drive impactful results, ensuring that
+        every project exceeds expectations and leaves a lasting impression in
+        the digital landscape.
       </motion.p>
-      <motion.p
+      {/* <motion.p
         variants={variantsLeft}
         initial='hidden'
         animate={controls}
@@ -87,7 +88,7 @@ const OurTeamTextSection: React.FC = () => {
         that leaves a lasting impression. With their unparalleled expertise and
         creative vision, they continue to raise the bar in the ever-evolving
         landscape of video production.
-      </motion.p>
+      </motion.p> */}
     </div>
   );
 };
