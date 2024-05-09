@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation, Variants } from 'framer-motion';
 import { useEffect } from 'react';
 
-const AboutUsSection: React.FC = () => {
+const ProjectHeader: React.FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -45,10 +45,10 @@ const AboutUsSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className='bg-gradient-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-center text-2xl font-bold text-transparent md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]'
       >
-        About ZoomIn Productions
+        ZoomIn Productions
         <span className='text-black'>
           {' '}
-          - Best Ad Film Production House In Mumbai & Delhi
+          is Mumbai and Delhi&apos;s top ad film production house.
         </span>
       </motion.h2>
 
@@ -59,9 +59,10 @@ const AboutUsSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className='text-xl font-medium text-[#000]'
       >
-        ZoomIn is a creative powerhouse. We are forward-thinking and we
-        specialize in creating bespoke content that empowers brands, amplifies
-        digital presence, and enriches brand value.
+        With over 20 years of experience, we excel in creating impactful content
+        for India’s most prestigious brands. Our expertise spans various content
+        verticals, delivering innovative and unique solutions tailored to each
+        brand’s needs.
       </motion.p>
       <motion.p
         variants={variantsLeft}
@@ -70,10 +71,9 @@ const AboutUsSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 1.0 }}
         className='text-xl font-medium text-[#000]'
       >
-        Our expertise spans the entire gamut of communications and marketing,
-        delivering a suite of services from conceptualization to the final
-        flourish that makes your content sing. At our core, we are committed to
-        transforming casual observers into loyal advocates of your project.
+        Trusted by the G20, the Bill & Melinda Gates Foundation, and the World
+        Bank, among others, we set the standard in modern filmmaking and bring
+        your ideas to life with exceptional results.
       </motion.p>
       <motion.p
         variants={variantsBottom}
@@ -81,12 +81,9 @@ const AboutUsSection: React.FC = () => {
         animate={controls}
         transition={{ duration: 0.5, delay: 1.9 }}
         className='flex flex-col items-start justify-center gap-y-10 text-left text-xl font-medium text-[#000]'
-      >
-        Let us navigate the communications and marketing landscape for you,
-        ensuring your journey is both impactful and memorable.
-      </motion.p>
+      ></motion.p>
     </div>
   );
 };
 
-export default AboutUsSection;
+export default ProjectHeader;

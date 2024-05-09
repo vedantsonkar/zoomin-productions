@@ -119,7 +119,7 @@ const OUR_TEAM = [
   },
   {
     name: 'Praveen Sharma',
-    imageSrc: '/images/team/Pravin.jpg',
+    imageSrc: '/images/team/Pravin.jpeg',
     position: 'Senior Video Editor',
     twitter: '',
     instagram: '',

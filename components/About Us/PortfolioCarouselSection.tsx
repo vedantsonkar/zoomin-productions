@@ -36,11 +36,9 @@ const PortfolioSection: FC = () => {
         </h3>
 
         <p className='mb-12 px-14 text-center text-lg sm:px-20 md:px-56'>
-          Our dynamic team is a collective force of creativity and expertise,
-          specializing in the realms of video production and content generation.
-          Comprising seasoned professionals with a passion for visual
-          storytelling, our team members bring a wealth of experience and
-          innovation to every project.
+          Meet the creative minds behind ZoomIn. Our team brings fresh
+          perspectives, technical mastery, and a passion for innovative
+          storytelling.
         </p>
         <div className='block w-full px-16 md:px-24'>
           <Carousel
