@@ -134,7 +134,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
           className='max-md:col-span-full max-md:scale-90'
         />
       </motion.div>
-      {/* <motion.div
+      <motion.div
         variants={variantsBottom}
         initial='hidden'
         animate={controls}
@@ -142,7 +142,7 @@ const OurClientsSection: FC<OurClientsSectionProps> = ({
         className='flex w-full flex-col items-center justify-center px-10 md:px-24'
       >
         <TweetsCarousel />
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 };
