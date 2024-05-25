@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   return (
     <>
       <div className='sticky top-0 z-10 flex h-16 w-full items-center justify-between bg-pastel-pink bg-opacity-30 px-12 shadow-lg backdrop-blur-md md:h-28 lg:px-24'>
-        <Link href='/' className='relative h-full w-20 lg:w-28'>
+        <Link href='/' className='relative h-full w-20 lg:w-32'>
           <Image
             src={Logo}
             alt='ZoomIn Productions'
