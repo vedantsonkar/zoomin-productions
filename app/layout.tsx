@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ['/images/global/zoomin_logo.png'],
+    videos: ['/videos/Landing_Video.mp4'],
   },
   twitter: {
     images: ['/images/global/zoomin_logo.png'],

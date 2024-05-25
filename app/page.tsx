@@ -1,4 +1,5 @@
 import FeaturedFilms from '@/components/FeaturedSection';
+import OurServicesSection from '@/components/Our Services';
 import OurClientsSection from '@/components/OurClients';
 import AnimatedTextSection1 from '@/components/TextAnimation/Section1';
 // import AnimatedTextSection2 from '@/components/TextAnimation/Section2';
@@ -15,6 +16,7 @@ export default function Home() {
       />
       <div className='mt-12 flex w-full flex-col items-start justify-start gap-y-16 md:mt-36 md:gap-y-36 xl:px-36 2xl:px-12'>
         <AnimatedTextSection1 />
+        <OurServicesSection />
         <OurClientsSection />
         {/* <AnimatedTextSection2 /> */}
         <FeaturedFilms />

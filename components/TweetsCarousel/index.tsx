@@ -11,6 +11,7 @@ const TweetsCarousel: FC = () => {
         <Carousel
           settings={{
             autoplay: true,
+            arrows: true,
             slidesToScroll: 1,
             infinite: true,
             pauseOnFocus: true,
@@ -34,47 +35,59 @@ const TweetsCarousel: FC = () => {
           }}
         >
           <Link
-            href='https://twitter.com/narendramodi/status/1593258241798320131?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1593258241798320131%7Ctwgr%5E1abea6a9a91151f6433ede53582a4a8a4df21f4b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.zoomin.productions%2F'
-            className='px-4'
+            className='px-2'
+            target='_blank'
+            href='https://twitter.com/narendramodi/status/1593258241798320131'
           >
             <Image
-              src='/images/Tweets/tweet_1.png'
+              src='/images/tweets/tweet_1.jpg'
               alt='tweet_1'
               width={500}
               height={500}
+              className='mx-auto rounded-lg shadow-lg'
+              sizes='100vw'
             />
           </Link>
           <Link
-            href='https://twitter.com/BJP4India/status/1541375088347336704?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1541375088347336704%7Ctwgr%5E1abea6a9a91151f6433ede53582a4a8a4df21f4b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.zoomin.productions%2F'
-            className='px-4'
+            className='px-2'
+            target='_blank'
+            href='https://twitter.com/KTSangamam/status/1593126813643206656'
           >
             <Image
-              src='/images/Tweets/tweet_2.png'
+              src='/images/tweets/tweet_2.jpg'
               alt='tweet_2'
               width={500}
               height={500}
+              className='mx-auto rounded-lg shadow-lg'
+              sizes='100vw'
             />
           </Link>
           <Link
-            href='https://twitter.com/dpradhanbjp/status/1484853266244841472?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1484853266244841472%7Ctwgr%5E1abea6a9a91151f6433ede53582a4a8a4df21f4b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.zoomin.productions%2F'
-            className='px-4'
+            className='px-2'
+            target='_blank'
+            href='https://twitter.com/BJP4India/status/1541375088347336704'
           >
             <Image
-              src='/images/Tweets/tweet_3.png'
+              src='/images/tweets/tweet_3.jpg'
               alt='tweet_3'
               width={500}
               height={500}
+              className='mx-auto rounded-lg shadow-lg'
+              sizes='100vw'
             />
           </Link>
           <Link
-            href='https://twitter.com/KTSangamam/status/1593126813643206656?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1593126813643206656%7Ctwgr%5E1abea6a9a91151f6433ede53582a4a8a4df21f4b%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.zoomin.productions%2F'
-            className='px-4'
+            className='px-2'
+            target='_blank'
+            href='https://twitter.com/dpradhanbjp/status/1484853266244841472'
           >
             <Image
-              src='/images/Tweets/tweet_4.png'
+              src='/images/tweets/tweet_4.jpg'
               alt='tweet_4'
               width={500}
               height={500}
+              className='mx-auto rounded-lg shadow-lg'
+              sizes='100vw'
             />
           </Link>
         </Carousel>
