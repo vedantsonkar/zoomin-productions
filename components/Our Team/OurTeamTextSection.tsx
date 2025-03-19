@@ -36,7 +36,7 @@ const OurTeamTextSection: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className='heading bg-gradient-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-transparent md:leading-tight'
+        className='heading bg-linear-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-transparent md:leading-tight'
       >
         Our Team
         <span className='text-black'> at Zoomin</span>

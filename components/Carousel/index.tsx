@@ -2,42 +2,42 @@
 import { FC } from 'react';
 import Slider, { Settings } from 'react-slick';
 import Image from 'next/image';
+import { twMerge } from 'tailwind-merge';
 
 type SliderPropTypes = {
   children: any;
   settings?: Settings;
 };
-type ArrowPropTypes = {
-  direction?: 'right' | 'left';
-};
 
 const PrevArrow: FC = (props) => {
-  const arrowClassName =
-    'relative h-6 w-6 border-2 border-black rounded-full p-4';
   return (
-    <div className={arrowClassName} {...props}>
+    <button
+      className='relative h-6 w-6 rounded-full border-2 border-black p-4'
+      {...props}
+    >
       <Image
         src='/images/vectors/Arrow.svg'
         className='object-contain'
         fill
         alt='Arrow'
       />
-    </div>
+    </button>
   );
 };
 
 const NextArrow: FC = (props) => {
-  const arrowClassName =
-    'relative h-6 w-6 border-2 border-black rounded-full p-4';
   return (
-    <div className={arrowClassName} {...props}>
+    <button
+      className='relative h-6 w-6 rounded-full border-2 border-black p-4'
+      {...props}
+    >
       <Image
         src='/images/vectors/Arrow.svg'
         className='rotate-180 object-contain'
         fill
         alt='Arrow'
       />
-    </div>
+    </button>
   );
 };
 

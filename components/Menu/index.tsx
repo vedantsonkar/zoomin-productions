@@ -17,7 +17,7 @@ const Menu: FC<MenuProps> = ({ closeMenu }) => {
   };
 
   return (
-    <nav className='max-w-screen fixed top-16 z-10 flex h-full w-full flex-col items-center gap-y-10 overflow-y-auto bg-pastel-pink bg-opacity-30 py-10 text-xl font-bold backdrop-blur-md lg:hidden'>
+    <nav className='bg-pastel-pink/40 fixed top-16 z-10 flex h-full w-full max-w-screen flex-col items-center gap-y-10 overflow-y-auto py-10 text-xl font-bold backdrop-blur-md lg:hidden'>
       <button onClick={() => onClick('/')} className={lClass} aria-label='Home'>
         Home
       </button>

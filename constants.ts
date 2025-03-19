@@ -134,9 +134,9 @@ const OUR_TEAM = [
     linkedin: '',
   },
   {
-    name: 'Himanshu',
-    imageSrc: '/images/team/Himanshu.jpg',
-    position: 'Junior Editor',
+    name: 'Alvin Antu',
+    imageSrc: '/images/team/Alvin_Antu.jpg',
+    position: 'Social Media Manager | Editor',
     twitter: '',
     instagram: '',
     linkedin: '',

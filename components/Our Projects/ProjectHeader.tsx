@@ -43,12 +43,12 @@ const ProjectHeader: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className='bg-gradient-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-center text-2xl font-bold text-transparent md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]'
+        className='bg-linear-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-center text-2xl font-bold text-transparent md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]'
       >
         ZoomIn Productions
         <span className='text-black'>
           {' '}
-          is Mumbai and Delhi&apos;s top ad film production house.
+          is Your All-in-One Partner for Content, Marketing & Branding.
         </span>
       </motion.h2>
 

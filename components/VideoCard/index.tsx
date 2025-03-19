@@ -5,11 +5,17 @@ import Modal from '../ModalIframe';
 
 type VideoCardProps = {
   name: string;
+  description?: string[];
   imageSrc: string;
   videoUrl: string;
 };
 
-const VideoCard: FC<VideoCardProps> = ({ name, imageSrc, videoUrl }) => {
+const VideoCard: FC<VideoCardProps> = ({
+  name,
+  description,
+  imageSrc,
+  videoUrl,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -23,7 +29,7 @@ const VideoCard: FC<VideoCardProps> = ({ name, imageSrc, videoUrl }) => {
   return (
     <>
       <button
-        className='group relative mx-auto flex aspect-square h-full max-h-52 w-full max-w-52 cursor-pointer items-center justify-center rounded-md bg-white shadow-lg xl:max-h-60 xl:max-w-60 min-[1800px]:max-h-72 min-[1800px]:max-w-72'
+        className='group relative mx-auto flex aspect-square h-full max-h-52 w-full max-w-52 cursor-pointer items-center justify-center rounded-md bg-white shadow-lg min-[1800px]:max-h-72 min-[1800px]:max-w-72 xl:max-h-60 xl:max-w-60'
         onClick={handleModalOpen}
       >
         <Image
@@ -37,11 +43,11 @@ const VideoCard: FC<VideoCardProps> = ({ name, imageSrc, videoUrl }) => {
           aria-label='Logo'
         />
         <div className='absolute bottom-0 left-1/2 w-full -translate-x-1/2'>
-          <p className='rounded-b-md bg-black bg-opacity-60 py-2 text-center text-white max-xl:text-sm max-sm:text-xs max-sm:font-medium'>
+          <p className='rounded-b-md bg-black/60 py-2 text-center text-white max-xl:text-sm max-sm:text-xs max-sm:font-medium'>
             {name}
           </p>
         </div>
-        <div className='invisible absolute z-10 h-full w-full rounded-md bg-black bg-opacity-30 group-hover:visible' />
+        <div className='invisible absolute z-10 h-full w-full rounded-md bg-black/30 group-hover:visible' />
 
         <div className='relative h-20 w-20 group-hover:visible md:invisible'>
           <Image
@@ -61,7 +67,22 @@ const VideoCard: FC<VideoCardProps> = ({ name, imageSrc, videoUrl }) => {
         show={isModalOpen}
         onClose={() => handleModalClose()}
       >
-        <iframe src={videoUrl} width='100%' height='100%' />
+        <div className='flex h-full w-full items-center rounded-lg bg-white p-4 max-lg:flex-col lg:justify-start lg:p-8'>
+          <div className='aspect-video w-full shadow-2xl lg:max-w-[70%]'>
+            <iframe src={videoUrl} className='h-full w-full' />
+          </div>
+          <div className='h-[0.2px] w-[90%] bg-slate-200 max-lg:my-6 lg:mx-6 lg:h-[90%] lg:w-[0.2px]' />
+          <div className='flex h-full flex-col gap-y-6 py-[3.2%]'>
+            <h3 className='heading flex flex-col items-center justify-start text-left'>
+              {name}
+            </h3>
+            {description &&
+              description.length > 0 &&
+              description.map((item, index) => {
+                return <p key={index}>{item}</p>;
+              })}
+          </div>
+        </div>
       </Modal>
     </>
   );

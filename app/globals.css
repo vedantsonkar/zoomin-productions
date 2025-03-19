@@ -1,6 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-pastel-pink: #ffd1dc;
+  --color-pastel-green: #a6cba4;
+  --color-pastel-red: #ff4137;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+
+  --font-poppins: var(--font-poppins);
+  --font-cedarville_cursive: var(--font-cedarville_cursive);
+  --font-gilroy: Gilroy;
+  --font-futura: Futura;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
 
 @layer base {
   @font-face {
@@ -18,13 +55,14 @@
   }
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer utilities {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
 
-/* @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -32,21 +70,16 @@
   }
 } */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  overflow-x: hidden;
-  @apply bg-white font-poppins;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+    overflow-x: hidden;
+    @apply bg-white font-poppins;
   }
 }
 
@@ -119,7 +152,7 @@ body {
 }
 
 .heading {
-  @apply font-futura text-center text-[2rem] font-normal uppercase tracking-wider text-[#a0383f] decoration-[#a0383f] lg:text-[2.6rem] xl:text-[3rem] 2xl:text-[3.5rem] min-[1800px]:text-[4.375rem];
+  @apply text-center font-futura text-[2rem] font-normal uppercase leading-none tracking-wider text-[#a0383f] decoration-[#a0383f] lg:text-[2.6rem] xl:text-[3rem] 2xl:text-[3.5rem] min-[1800px]:text-[4.375rem];
 }
 
 .polygon-div {
