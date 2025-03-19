@@ -59,7 +59,7 @@ const OurServicesSection: FC = () => {
           animate={controls}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <div className='relative aspect-square h-32 w-32 flex-shrink-0 rounded-full bg-[#263238] p-4 lg:h-48 lg:w-48 xl:h-52 xl:w-52 2xl:h-60 2xl:w-60'>
+          <div className='relative aspect-square h-32 w-32 shrink-0 rounded-full bg-[#263238] p-4 lg:h-48 lg:w-48 xl:h-52 xl:w-52 2xl:h-60 2xl:w-60'>
             <Image
               src='/images/services/production_services.png'
               alt='Production Services'
@@ -108,7 +108,7 @@ const OurServicesSection: FC = () => {
               sustainable growth.
             </p>
           </motion.div>
-          <div className='relative aspect-square h-32 w-32 flex-shrink-0 rounded-full bg-[#263238] p-4 lg:h-48 lg:w-48 xl:h-52 xl:w-52 2xl:h-60 2xl:w-60'>
+          <div className='relative aspect-square h-32 w-32 shrink-0 rounded-full bg-[#263238] p-4 lg:h-48 lg:w-48 xl:h-52 xl:w-52 2xl:h-60 2xl:w-60'>
             <Image
               src='/images/services/growth_strategy.png'
               alt='Production Services'
@@ -126,7 +126,7 @@ const OurServicesSection: FC = () => {
           animate={controls}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <div className='relative aspect-square h-32 w-32 flex-shrink-0 rounded-full bg-[#263238] p-4 lg:h-48 lg:w-48 xl:h-52 xl:w-52 2xl:h-60 2xl:w-60'>
+          <div className='relative aspect-square h-32 w-32 shrink-0 rounded-full bg-[#263238] p-4 lg:h-48 lg:w-48 xl:h-52 xl:w-52 2xl:h-60 2xl:w-60'>
             <Image
               src='/images/services/digital_marketing.png'
               alt='Production Services'

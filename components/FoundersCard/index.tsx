@@ -25,7 +25,7 @@ const FoundersCard: FC<FounderCardProps> = ({
           reverse && 'md:flex-row-reverse',
         )}
       >
-        <div className='relative h-[20rem] w-[20rem] flex-shrink-0 shadow-xl transition-all duration-300 hover:shadow-2xl sm:h-[30rem] sm:w-[30rem]'>
+        <div className='relative h-[20rem] w-[20rem] shrink-0 shadow-xl transition-all duration-300 hover:shadow-2xl sm:h-[30rem] sm:w-[30rem]'>
           <Image
             src={image}
             alt='Profile Image'

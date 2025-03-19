@@ -44,7 +44,7 @@ const AnimatedTextSection2: React.FC = () => {
         initial='hidden'
         animate={controls}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className='bg-gradient-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-center text-2xl font-bold text-transparent md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]'
+        className='bg-linear-to-br from-indigo-500 from-20% via-sky-500 via-65% to-emerald-500 bg-clip-text text-center text-2xl font-bold text-transparent md:text-[1.6rem] md:leading-tight lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3rem]'
       >
         Welcome To ZoomIn Productions
         <span className='text-black'> - Production House In India</span>
@@ -96,7 +96,7 @@ const AnimatedTextSection2: React.FC = () => {
         </span>
         <button
           // href="/about-us"
-          className='self-center rounded-full border border-[#000] from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% px-8 py-4 hover:border-white hover:bg-gradient-to-br hover:text-white'
+          className='self-center rounded-full border border-[#000] from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% px-8 py-4 hover:border-white hover:bg-linear-to-br hover:text-white'
         >
           Learn More
         </button>

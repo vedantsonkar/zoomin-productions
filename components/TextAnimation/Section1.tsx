@@ -59,7 +59,7 @@ const AnimatedTextSection1: React.FC = () => {
           className='text-2xl font-bold text-black max-lg:text-center md:text-[1.5rem] md:leading-tight lg:text-[1.6rem] 2xl:text-[2rem] min-[1800px]:text-[2.5rem]'
         >
           With{' '}
-          <span className='bg-gradient-to-r from-orange-700 via-yellow-600 via-50% to-green-600 bg-clip-text text-transparent'>
+          <span className='bg-linear-to-r from-orange-700 via-yellow-600 via-50% to-green-600 bg-clip-text text-transparent'>
             ZoomIn Productions
           </span>
           , every frame, every word, and every campaign drives results.
