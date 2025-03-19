@@ -136,7 +136,7 @@ const OUR_TEAM = [
   {
     name: 'Alvin Antu',
     imageSrc: '/images/team/Alvin_Antu.jpg',
-    position: 'Social Media Manager/Editor',
+    position: 'Social Media Manager | Editor',
     twitter: '',
     instagram: '',
     linkedin: '',

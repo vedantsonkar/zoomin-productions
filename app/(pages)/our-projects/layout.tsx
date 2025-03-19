@@ -1,20 +1,42 @@
-import { BASE_DOMAIN } from "@/constants";
-import type { Metadata } from "next";
+import { BASE_DOMAIN } from '@/constants';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Our Projects - ZoomIn Productions",
+  title: 'Our Projects - ZoomIn Productions',
   description:
-    "We at ZoomIn are a creative powerhouse. We embrace challenges and adapt to your needs. We strategize and innovate. We create bespoke content that empowers brands, amplifies digital presence, and enriches your brand value.",
+    'We at ZoomIn are a creative powerhouse. We embrace challenges and adapt to your needs. We strategize and innovate. We create bespoke content that empowers brands, amplifies digital presence, and enriches your brand value.',
   alternates: {
-    canonical: "/our-projects/",
+    canonical: '/our-projects/',
   },
-  keywords: ["smm mumbai", "smm delhi", "smm zoomin", "smm zoomin productions"],
-  robots: "index, follow",
+  keywords: [
+    'smm mumbai',
+    'smm delhi',
+    'smm zoomin',
+    'smm zoomin productions',
+    'social media managment',
+    'production house',
+    'production',
+    'social media',
+    'editing',
+    'video editing',
+    'video production',
+    'content creation',
+    'content',
+    'content creators',
+    'content creation team',
+    'content creation team mumbai',
+    'content creation team delhi',
+    'content creation team zoomin',
+    'content creation team zoomin productions',
+    'content creation team india',
+    'content creation team mumbai india',
+  ],
+  robots: 'index, follow',
   openGraph: {
-    images: ["/images/global/zoomin_logo.png"],
+    images: ['/images/global/zoomin_logo.png'],
   },
   twitter: {
-    images: ["/images/global/zoomin_logo.png"],
+    images: ['/images/global/zoomin_logo.png'],
   },
 };
 
