@@ -1,6 +1,11 @@
 'use client';
 import { Fragment, useRef, FC } from 'react';
-import { Transition, Dialog, TransitionChild, DialogPanel } from '@headlessui/react';
+import {
+  Transition,
+  Dialog,
+  TransitionChild,
+  DialogPanel,
+} from '@headlessui/react';
 import Image from 'next/image';
 
 export type ModalPropTypes = {
@@ -51,18 +56,13 @@ const Modal: FC<PropTypes> = ({ id, show = false, onClose, children }) => {
             leaveFrom='opacity-100 max-md:-translate-y-0'
             leaveTo='opacity-0 max-md:translate-y-full'
           >
-            <DialogPanel
-              className='relative mx-10 block h-[90%] w-[90%] transform items-center rounded-md transition-all'
-              onClick={() => {
-                onClose();
-              }}
-            >
+            <DialogPanel className='relative mx-10 block h-[90%] w-[90%] transform items-center rounded-md transition-all'>
               {children}
 
               <button
                 type='button'
                 onClick={() => onClose()}
-                className='absolute -right-4 -top-4 z-51 h-10 w-10 rounded-full bg-white text-xl'
+                className='absolute -top-4 -right-4 z-51 h-10 w-10 rounded-full bg-white text-xl'
               >
                 <Image src='/images/vectors/close.svg' fill alt='Close Modal' />
               </button>
