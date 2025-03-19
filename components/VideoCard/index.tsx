@@ -5,11 +5,17 @@ import Modal from '../ModalIframe';
 
 type VideoCardProps = {
   name: string;
+  description?: string[];
   imageSrc: string;
   videoUrl: string;
 };
 
-const VideoCard: FC<VideoCardProps> = ({ name, imageSrc, videoUrl }) => {
+const VideoCard: FC<VideoCardProps> = ({
+  name,
+  description,
+  imageSrc,
+  videoUrl,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -61,7 +67,22 @@ const VideoCard: FC<VideoCardProps> = ({ name, imageSrc, videoUrl }) => {
         show={isModalOpen}
         onClose={() => handleModalClose()}
       >
-        <iframe src={videoUrl} width='100%' height='100%' />
+        <div className='flex h-full w-full items-center rounded-lg bg-white p-4 max-lg:flex-col lg:justify-start lg:p-8'>
+          <div className='aspect-video w-full shadow-2xl lg:max-w-[70%]'>
+            <iframe src={videoUrl} className='h-full w-full' />
+          </div>
+          <div className='h-[0.2px] w-[90%] bg-slate-200 max-lg:my-6 lg:mx-6 lg:h-[90%] lg:w-[0.2px]' />
+          <div className='flex h-full flex-col gap-y-6 py-[3.2%]'>
+            <h3 className='heading flex flex-col items-center justify-start text-left'>
+              {name}
+            </h3>
+            {description &&
+              description.length > 0 &&
+              description.map((item, index) => {
+                return <p key={index}>{item}</p>;
+              })}
+          </div>
+        </div>
       </Modal>
     </>
   );

@@ -7,7 +7,6 @@ import Image from 'next/image';
 const AnimatedTextSection1: React.FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
-
   // Define animation variants
   const variantsRight: Variants = {
     visible: { opacity: 1, x: 0 },
