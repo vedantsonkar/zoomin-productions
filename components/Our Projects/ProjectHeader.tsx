@@ -48,7 +48,7 @@ const ProjectHeader: React.FC = () => {
         ZoomIn Productions
         <span className='text-black'>
           {' '}
-          is Mumbai and Delhi&apos;s top ad film production house.
+          is Your All-in-One Partner for Content, Marketing & Branding.
         </span>
       </motion.h2>
 

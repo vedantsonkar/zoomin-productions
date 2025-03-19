@@ -56,10 +56,13 @@ const AnimatedTextSection1: React.FC = () => {
           initial='hidden'
           animate={controls}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='text-2xl font-bold text-black md:text-[1.5rem] md:leading-tight lg:text-[1.6rem] 2xl:text-[2rem] min-[1800px]:text-[2.5rem]'
+          className='text-2xl font-bold text-black max-lg:text-center md:text-[1.5rem] md:leading-tight lg:text-[1.6rem] 2xl:text-[2rem] min-[1800px]:text-[2.5rem]'
         >
-          A fully integrated production company and a leader in all forms of
-          content creation, entertainment and related businesses
+          With{' '}
+          <span className='bg-gradient-to-r from-orange-700 via-yellow-600 via-50% to-green-600 bg-clip-text text-transparent'>
+            ZoomIn Productions
+          </span>
+          , every frame, every word, and every campaign drives results.
         </motion.h2>
 
         <motion.h3
@@ -67,13 +70,11 @@ const AnimatedTextSection1: React.FC = () => {
           initial='hidden'
           animate={controls}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className='text-lg font-semibold text-black md:text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.5rem] min-[1800px]:text-[1.8rem]'
+          className='text-lg font-semibold text-black max-lg:text-center md:text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.5rem] min-[1800px]:text-[1.8rem]'
         >
-          <span className='bg-gradient-to-r from-orange-700 via-yellow-600 via-50% to-green-600 bg-clip-text text-transparent'>
-            ZoomIn Productions{' '}
-          </span>
-          are the pioneers of the filmmaking industry. We house storytellers and
-          creators who are the kingpins of producing and narrating a story.
+          At ZoomIn, creativity meets strategy to craft content that captivates
+          and converts. From compelling storytelling to impactful marketing, we
+          turn ideas into unforgettable brand experiences.
         </motion.h3>
       </div>
     </div>

@@ -36,7 +36,7 @@ const OurServicesSection: FC = () => {
 
   return (
     <div
-      className='flex w-full flex-col items-center justify-center gap-y-10  px-10 md:px-24'
+      className='flex w-full flex-col items-center justify-center gap-y-10 px-6 md:px-24'
       ref={ref}
     >
       <motion.div
@@ -47,7 +47,7 @@ const OurServicesSection: FC = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <h2 className='heading'>Our Services</h2>
-        <h3 className='mb-10 text-center text-lg max-md:px-12 2xl:text-xl'>
+        <h3 className='mb-10 text-center text-lg 2xl:text-xl'>
           All tailored to your brand&apos;s unique vision.
         </h3>
       </motion.div>
