@@ -9,11 +9,11 @@ type SliderPropTypes = {
   settings?: Settings;
 };
 
-const PrevArrow: FC = (props) => {
+const PrevArrow: FC<any> = ({ currentSlide, slideCount, ...rest }) => {
   return (
     <button
       className='relative h-6 w-6 rounded-full border-2 border-black p-4'
-      {...props}
+      {...rest}
     >
       <Image
         src='/images/vectors/Arrow.svg'
@@ -25,11 +25,11 @@ const PrevArrow: FC = (props) => {
   );
 };
 
-const NextArrow: FC = (props) => {
+const NextArrow: FC<any> = ({ currentSlide, slideCount, ...rest }) => {
   return (
     <button
       className='relative h-6 w-6 rounded-full border-2 border-black p-4'
-      {...props}
+      {...rest}
     >
       <Image
         src='/images/vectors/Arrow.svg'
@@ -46,8 +46,8 @@ const Carousel: FC<SliderPropTypes> = ({ children, settings }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    nextArrow: settings?.arrows ? <NextArrow /> : <></>,
-    prevArrow: settings?.arrows ? <PrevArrow /> : <></>,
+    nextArrow: settings?.arrows ? <NextArrow /> : undefined,
+    prevArrow: settings?.arrows ? <PrevArrow /> : undefined,
     slidesToShow: 3,
     slidesToScroll: 1,
     ...settings,
