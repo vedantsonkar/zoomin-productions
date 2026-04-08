@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
         <div className='flex flex-col space-y-3'>
           <Link
-            href='https://docs.google.com/forms/d/e/1FAIpQLSc9qSGhxIse7YhaTr7HiakCXbcYHKyL2Uns30R9NGzVWIzZvA/viewform?usp=sf_link
+            href='https://docs.google.com/forms/d/e/1FAIpQLSdEpRTUbSMIjnKc0n07hVWKcnRswzt83b_-RJwK8QTfWAPqQg/viewform?usp=sf_link
 '
           >
             Careers
