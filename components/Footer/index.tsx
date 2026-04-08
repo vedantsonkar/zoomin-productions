@@ -80,7 +80,7 @@ export default function Footer() {
             Careers
           </Link>
           <Link
-            href='https://docs.google.com/forms/d/e/1FAIpQLSc9qSGhxIse7YhaTr7HiakCXbcYHKyL2Uns30R9NGzVWIzZvA/viewform?usp=sf_link
+            href='https://docs.google.com/forms/d/e/1FAIpQLSdEpRTUbSMIjnKc0n07hVWKcnRswzt83b_-RJwK8QTfWAPqQg/viewform?usp=sf_link
 '
           >
             Contact Us
